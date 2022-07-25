@@ -1,0 +1,28 @@
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+
+  <section class="bcls-section">
+    <h2 id="Apple_Consent_Compliance">Apple Consent Compliance</h2>
+    <p>Apple requires that iOS/tvOS apps must have a delete button to remove a viewer's account. See Apple's App Store Review Guidelines document, <a href="https://developer.apple.com/app-store/review/guidelines/#5.1.1">Legal - Data Collection and Storage</a> section for full details.</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Brightcove_{{ site.product_short }}_implementation">Brightcove {{ site.product_short }} implementation</h2>
+    <p>In the app's <strong>Settings -> My Account</strong> options a <strong>Delete Account</strong> option is present</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/app-behavior/account-deletion/apple-account-deletion.png" alt="account deletion option">
+    </figure>
+    <p>When the viewer clicks the button, {{ site.product_short }} performs the following tasks:</p>
+    <ul>
+      <li>Confirms the viewer wishes to delete the account.</li>
+      <li>Alerts the viewer that they must cancel all active subscriptions with other platform's stores before {{ site.product_short }} account deletion can occur.</li>
+      <li>{{ site.product_short }}'s backend verifies all of the viewer's active subscriptions with other platform's stores that there are no active subscriptions.</li>
+      <li>Removal of viewer information from Stripe and Evergent (name, contact info, payment data)</li>
+      <li>{{ site.product_short }}'s user management service deletes the account and all associated data associated with that account, like preferences, favorites, recently watched, etc.</li>
+      <li>Notifies the user the account is deleted, via a message in an app alert, when all conditions are met and deletion processes completed.</li>
+    </ul>
+    <p>Note that if a viewer uses an OIDC login and logs in after the account has been removed, an account with those credentials will be created, but it is a new, separate account and no previous data associated with that account is retrieved.</p>
+  </section>
+
+</article>
