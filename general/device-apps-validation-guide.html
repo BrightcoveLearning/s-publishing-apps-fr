@@ -1,168 +1,143 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Overview">Overview</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Overview">Aperçu</h2>
     <p>
-      At some point in the development of your apps from the Brightcove {{ site.product_short }} Experience you will be given test builds to be sure the apps are behaving as you wish. This document will provide information on each of the following:
+      À un moment donné du développement de vos applications à partir de l'expérience Brightcove {{site.product_short}}, des versions de test vous seront proposées pour vous assurer que les applications se comportent comme vous le souhaitez. Ce document fournira des informations sur chacun des points suivants:
     </p>
     <ul>
-      <li><em>Testing categories</em>: Define broad areas for testing.</li>
-      <li>
-        <em>Tips</em>: Suggestions and insights to follow when performing the testing.
+      <li><em>Catégories de tests</em>: Définissez les grands domaines de test.</li>
+      <li> <em>Conseils</em>: Suggestions et informations à suivre lors de la réalisation des tests.
       </li>
-      <li>
-        <em>Reporting</em>: The procedure to following if you encounter issues in your testing.
+      <li> <em>Rapports</em>: La procédure à suivre si vous rencontrez des problèmes lors de vos tests.
       </li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Before_you_start">Before you start</h2>
-    <p>Be sure you are setup for proper testing. Ensure the following:</p>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Before_you_start">Avant de commencer</h2>
+    <p>Assurez-vous d'être prêt pour les tests appropriés. Vérifiez les points suivants:</p>
     <ul>
-      <li>Testers have all the needed testing devices at hand.</li>
-      <li>For compatibility's sake, the devices used for testing should be no more than three years old. Later in this document specific, required minimum versions will be specified for each platform.</li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Testing_categories">Testing categories</h2>
+      <li>Les testeurs disposent de tous les appareils de test nécessaires.</li>
+      <li>Pour des raisons de compatibilité, les appareils utilisés pour les tests ne doivent pas avoir plus de trois ans. Plus loin dans ce document, les versions minimales requises seront spécifiées pour chaque plate-forme.</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Testing_categories">Catégories de tests</h2>
     <p>
-      Brightcove recommends the following areas be tested and questions answered:
+      Brightcove recommande de tester les domaines suivants et de répondre aux questions suivantes:
     </p>
     <ul>
       <li>
-        Design and Features:
+        Design et fonctionnalités:
         <ul>
-          <li>Does the experience match the agreed upon mock-ups?</li>
-          <li>Is all the requested functionality available?</li>
+          <li>L'expérience correspond-elle aux maquettes convenues&nbsp;?</li>
+          <li>Est-ce que toutes les fonctionnalités demandées sont disponibles&nbsp;?</li>
         </ul>
       </li>
       <li>
-        Page Layout and Content:
+        Mise en page et contenu:
         <ul>
-          <li>Are the pages setup as expected?</li>
-          <li>Is the expected content showing up in each of the pages?</li>
+          <li>Les pages sont-elles configurées comme prévu&nbsp;?</li>
+          <li>Le contenu attendu apparaît-il dans chacune des pages&nbsp;?</li>
         </ul>
       </li>
       <li>
-        Monetization Setup:
+        Configuration de la monétisation:
         <ul>
-          <li>Are ads appearing as expected?</li>
+          <li>Les publicités apparaissent-elles comme prévu&nbsp;?</li>
           <li>
-            Are subscriptions showing for correspondent assets?
+            Les abonnements sont-ils affichés pour les actifs des correspondants&nbsp;?
           </li>
           <li>
-            Can the users purchase and get entitled to content as expected?
+            Les utilisateurs peuvent-ils acheter et obtenir le droit d'accéder au contenu comme prévu&nbsp;?
           </li>
         </ul>
       </li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Supported_platforms_and_versions">Supported platforms and versions</h2>
-    <p>The following lists the supported platforms and versions that should be used to guide your testing.</p>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Supported_platforms_and_versions">Plateformes et versions prises en charge</h2>
+    <p>La liste suivante répertorie les plates-formes et versions prises en charge qui doivent être utilisées pour guider vos tests.</p>
     <ul>
       <li>Web
         <ul>
-          <li>Chrome – Current version and current-1 version</li>
-          <li>Safari - Current version and current-1 version</li>
-          <li>Edge - Current version and current-1 version</li>
-          <li>Firefox - Current version and current-1 version</li>
+          <li>Chrome â€ Version actuelle et version actuelle-1</li>
+          <li>Safari - Version actuelle et version actuelle-1</li>
+          <li>Edge - Version actuelle et version actuelle-1</li>
+          <li>Firefox - Version actuelle et version actuelle-1</li>
         </ul>
       </li>
-      <li>Apple iOS (mobile/tablet)
+      <li>Apple iOS (téléphone portable/tablette)
         <ul>
-          <li>Apple iOS 13 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/ios-tvos/installing-ios-test-build.html">Installing an iOS/tvOS Test Build</a> document</li>
+          <li>Apple iOS 13 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/ios-tvos/installing-ios-test-build.html"> document</a> Installing an iOS/tvOS Test Build</li>
         </ul>
       </li>
       <li>Apple tvOS
         <ul>
-          <li>tvOS 12 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/ios-tvos/installing-ios-test-build.html">Installing an iOS/tvOS Test Build</a> document</li>
+          <li>tvOS 12 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/ios-tvos/installing-ios-test-build.html"> document</a> Installing an iOS/tvOS Test Build</li>
         </ul>
       </li>
       <li>Google Android
         <ul>
-          <li>Android 5 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/android/installing-android-test-build.html">Installing an Android Test Build</a> document</li>
+          <li>Android 5 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/android/installing-android-test-build.html"> document</a> Installation d'une version d'essai Android.</li>
         </ul>
       </li>
       <li>Google Android TV
         <ul>
-          <li>Android 5 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/android/installing-android-test-build.html">Installing an Android Test Build</a> document</li>
+          <li>Android 5 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/android/installing-android-test-build.html"> document</a> Installation d'une version d'essai Android.</li>
         </ul>
       </li>
       <li>Roku
         <ul>
-          <li>Roku OS 9.1 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/roku/installing-roku-test-build.html">Installing a Roku Test Build</a> document</li>
+          <li>Roku OS 9.1 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/roku/installing-roku-test-build.html"> document</a> Installing a Roku Test Build.</li>
         </ul>
       </li>
       <li>Amazon Fire TV
         <ul>
-          <li>Fire OS 5.0 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/fire-tv/installing-fire-tv-test-build.html">Installing a Fire TV Test Build</a> document</li>
+          <li>Fire OS 5.0 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/fire-tv/installing-fire-tv-test-build.html"> document</a> Installation d'une version d'essai de Fire TV</li>
         </ul>
       </li>
-      <li>Samsung Smart TV
+      <li>Téléviseur intelligent Samsung
         <ul>
           <li>Tizen 2018, 2019, 2020</li>
         </ul>
       </li>
-      <li>Sony Bravia Smart TV
+      <li>Téléviseur intelligent Sony Bravia
         <ul>
-          <li>Android TV 5.0+ and higher</li>
+          <li>Android TV 5.0+ et versions ultérieures</li>
         </ul>
       </li>
-      <li>Toshiba Smart TV
+      <li>Téléviseur intelligent Toshiba
         <ul>
-          <li>Android TV 5.0+ and higher and/or Fire OS 5.0 and higher</li>
-          <li>For additional information see the <a href="/publishing-apps/android/installing-android-test-build.html">Installing an Android Test Build</a> document</li>
+          <li>Android TV 5.0+ et versions ultérieures et/ou Fire OS 5.0 et versions ultérieures</li>
+          <li>Pour plus d'informations, consultez le<a href="/publishing-apps/android/installing-android-test-build.html"> document</a> Installation d'une version d'essai Android.</li>
         </ul>
       </li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information language-editable">Smart TVs support by age: Models at a maximum of three years old are supported. For example, if an app is submitted in 2021, the models supported are 2021, 2020 and 2019. If and app is submitted and next year's model are available, then that counts as a year. For example, if an app is submitted in 2021, but 2022 models are available, the the supported years are 2022, 2021 and 2020.</aside>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Tips">Tips</h2>
-    <p>Please consider the following tips when performing your validation:</p>
+    </ul> <aside class="bcls-aside bcls-aside--information language-editable">Prise en charge des téléviseurs intelligents par âge: Les modèles âgés de trois ans maximum sont pris en charge. Par exemple, si une application est soumise en 2021, les modèles pris en charge sont 2021, 2020 et 2019. Si une application est soumise et que le modèle de l'année suivante est disponible, cela compte pour une année. Par exemple, si une application est soumise en 2021, mais que les modèles 2022 sont disponibles, les années prises en charge sont 2022, 2021 et 2020.</aside> </section> <section class="bcls-section">
+    <h2 id="Tips">Conseils</h2>
+    <p>Veuillez prendre en compte les conseils suivants lorsque vous effectuez votre validation:</p>
     <ul>
-      <li>
-        <strong>First pass</strong>: Choose ONE of the platforms and go through the different areas of testing on that platform. Start with <em>Design and Features</em>, then move on to <em>Page Layout and Content</em> and lastly to <em>Monetization Setup</em> testing.
+      <li> <strong>Premier passage</strong>: Choisissez L'UNE des plateformes et passez en revue les différents domaines de test sur cette plateforme. Commencez par<em> Design et fonctionnalités</em>, puis passez à Mise en<em> page et contenu</em> et enfin aux<em> tests de configuration de la</em> monétisation.
       </li>
-      <li>
-        <strong>Additional rounds of testing</strong>: As you finish the first pass for each area, move on to other platforms that are available. If an issue is applicable to multiple platforms, please note that in any previously reported tickets.
+      <li> <strong>Des séries de tests supplémentaires</strong>: Au fur et à mesure que vous terminez le premier passage pour chaque zone, passez aux autres plateformes disponibles. Si un problème est applicable à plusieurs plateformes, veuillez le noter pour tous les tickets précédemment signalés.
       </li>
-      <li>
-        <strong>Testing fixes</strong>: Fixes for reported issues will be in one of these three areas:
+      <li> <strong>Corrections de</strong> tests Les correctifs pour les problèmes signalés se trouvent dans l'un des trois domaines suivants:
         <ul>
-          <li>The Brightcove {{ site.product_short }} Experience (no app updates needed)</li>
-          <li>In the app(s)</li>
-          <li>The Brightcove {{ site.product_short }} backend</li>
+          <li>L'expérience Brightcove {{site.product_short}} (aucune mise à jour de l'application n'est nécessaire)</li>
+          <li>Dans la (les) application (s)</li>
+          <li>Le backend Brightcove {{site.product_short}}</li>
         </ul>
         <p>
-          If the fix is in the app, a new build will be provided with details of what was fixed. For other areas, Brightcove would provide details in the ticket on what was fixed. To speed up fixing and retesting, it is very important that the tickets provide details on the issue, and steps to help with retesting.
+          Si le correctif se trouve dans l'application, une nouvelle version sera fournie avec les détails de ce qui a été corrigé. Pour les autres domaines, Brightcove fournirait des détails sur ce qui avait été corrigé dans le ticket. Pour accélérer les corrections et les nouveaux tests, il est très important que les tickets fournissent des détails sur le problème et des étapes pour faciliter les nouveaux tests.
         </p>
       </li>
-    </ul>
-  </section>
-  <section class="bcls-section">
+    </ul>  </section><section class="bcls-section">
     <h2 id="Reporting">Reporting</h2>
     <p>
-      Brightcove recommends that you report issues as you encounter them to keep the feedback flowing to Brightcove and have the issues fixed and turned around for validation as quickly as possible. Please report one issue/ticket per problem and provide the following information in each issue/ticket:
+      Brightcove vous recommande de signaler les problèmes au fur et à mesure que vous les rencontrez afin que les commentaires soient transmis à Brightcove et que les problèmes soient résolus et corrigés pour validation le plus rapidement possible. Veuillez signaler un problème/ticket par problème et fournir les informations suivantes dans chaque problème/ticket:
     </p>
     <ul>
-      <li>Platform tested</li>
-      <li>The app version in which the issue was found</li>
-      <li>Steps to reproduce</li>
+      <li>Plate-forme testée</li>
+      <li>La version de l'application dans laquelle le problème a été détecté</li>
+      <li>Étapes pour reproduire</li>
       <li>
-        Please include screenshots or screen movies to help speed up identifying the problem and providing a resolution </li>
-    </ul>
-  </section>
-</article>
+        Veuillez inclure des captures d'écran ou des vidéos d'écran pour accélérer l'identification du problème et fournir une solution </li>
+    </ul>  </section></article>

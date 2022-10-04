@@ -1,108 +1,71 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <aside class="bcls-aside bcls-aside--information">
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section"> <aside class="bcls-aside bcls-aside--information">
       <ul>
-        <li>Note that it can take up to 24 hours for changes to be reflected in your account.</li>
-        <li>If you are seeking information on how to update an existing app to a Brightcove {{ site.product_short }} app, see the <a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove {{ site.product_short }} </a> document.</li>
-      </ul>
-    </aside>
-    <h2 id="Introduction">Introduction</h2>
+        <li>Notez que cela peut prendre jusqu'à 24 heures pour que les modifications soient répercutées sur votre compte.</li>
+        <li>Si vous recherchez des informations sur la façon de mettre à jour une application existante vers une application Brightcove {{site.product_short}}, consultez le<a href="/creating-your-apps/android/updating-android-apps-to-bcb.html"> document</a> Mise à jour des applications Android vers Brightcove {{site.product_short}}.</li>
+      </ul> </aside>
+    <h2 id="Introduction">Présentation</h2>
     <p>
-      You may have an existing Android app, but you need to update it so it will be part of your Brightcove {{ site.product_short }} family of apps. This document leads you through that process. A high-level view of the process is: </p>
+      Vous avez peut-être une application Android existante, mais vous devez la mettre à jour pour qu'elle fasse partie de votre famille d'applications Brightcove {{site.product_short}}. Ce document vous guide tout au long de ce processus. Voici une vue de haut niveau du processus: </p>
     <ul>
       <li>
-        Turn on timed publishing (not required, but a recommended best practice) </li>
-      <li>Update your app</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
+        Activer la publication chronométrée (non obligatoire, mais il s'agit d'une bonne pratique recommandée) </li>
+      <li>Mettez à jour votre application</li>
+    </ul>  </section><section class="bcls-section">
     <h2 id="Turning_on_timed_publishing">
-      Turning on <em>timed publishing</em>
+      Activation de la publication<em> chronométrée</em>
     </h2>
     <p>
-      When updating an app to become a Brightcove {{ site.product_short }} app, it is highly likely you will NOT want changes to go live immediately. You most likely will want to make all the changes for the new Brightcove {{ site.product_short }} App, then at a specific time the changes will be pushed live. Android provides a mechanism to do this called <em>timed publishing</em>. The steps below guide you on how to enable timed publishing. For complete details on timed publishing see Google's
-      <a href="https://support.google.com/googleplay/android-developer/answer/9543912?hl=en">Publish an app with timed publishing</a> document.
+      Lors de la mise à jour d'une application pour qu'elle devienne une application Brightcove {{site.product_short}}, il est fort probable que vous ne souhaitiez PAS que les modifications soient mises en ligne immédiatement. Vous souhaiterez probablement apporter toutes les modifications à la nouvelle application Brightcove {{site.product_short}}, puis à un moment précis, les modifications seront mises en ligne. Android fournit un mécanisme pour ce faire appelé publication<em> chronométrée</em>. Les étapes ci-dessous vous expliquent comment activer la publication chronométrée. Pour plus de détails sur la publication chronométrée, consultez le<a href="https://support.google.com/googleplay/android-developer/answer/9543912?hl=en"> document</a> Publier une application avec publication chronométrée de Google.
     </p>
     <ol class="bcls-tasklist">
       <li>
-        Sign in to the
-        <a href="https://play.google.com/apps/publish/">Google Play Console</a>.
+        Connectez-vous à la console<a href="https://play.google.com/apps/publish/"> Google Play</a>.
       </li>
-      <li>Select the app you are updating to a Brightcove {{ site.product_short }} app.</li>
+      <li>Sélectionnez l'application que vous mettez à jour vers une application Brightcove {{site.product_short}}.</li>
       <li>
-        On the left menu, select
-        <strong>Store presence > Store listing</strong>.
-        <aside class="bcls-aside bcls-aside--tip"> You can turn on timed publishing from several pages in this section, including <strong>Store listing</strong> and <strong>Pricing & distribution</strong> </aside>
+        Dans le menu de gauche, sélectionnez Présence<strong> dans la boutique &gt; Liste de la boutique</strong>. <aside class="bcls-aside bcls-aside--tip"> Vous pouvez activer la publication chronométrée à partir de plusieurs pages de cette section, y compris la liste des<strong> boutiques</strong> et la<strong> tarification et la distribution</strong> </aside>
       </li>
       <li>
-        At the bottom of your screen, turn on timed publishing by clicking on the <strong>Timed publishing</strong> switch.
+        En bas de votre écran, activez la publication chronométrée en cliquant sur le<strong> bouton Publication</strong> chronométrée.
       </li>
       <li>
-        Review details in the <strong>Timed publishing</strong> dialog.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/timed-publishing.png" alt="timed publishing" />
-        </figure>
+        Consultez les détails dans la boîte de<strong> dialogue Publication</strong> chronométrée. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/timed-publishing.png" alt="publication chronométrée" /> </figure>
       </li>
-      <li>Click the <strong>TURN ON</strong> button.</li>
+      <li>Cliquez sur le<strong> bouton</strong> ACTIVER.</li>
     </ol>
     <p>
-      Now, as you make changes you will click the <strong>SUBMIT UPDATE</strong> button and the following dialog will appear:
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/sumbit-update.png" alt="submit update" />
-    </figure>
-    When you close the dialog you will see a list of updates that have been made under timed publishing. When you are ready to publish your updated Brightcove {{ site.product_short }} app, you will click the <strong>Go live</strong> button.
+      Maintenant, lorsque vous apportez des modifications, vous allez cliquer sur le<strong> bouton</strong> SOUMETTRE LA MISE À JOUR et la boîte de dialogue suivante apparaît: <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/sumbit-update.png" alt="soumettre une mise à" /> </figure> Lorsque vous fermez la boîte de dialogue, vous verrez une liste des mises à jour effectuées dans le cadre de la publication chronométrée. Lorsque vous serez prêt à publier votre application Brightcove {{site.product_short}} mise à jour, vous cliquerez sur le <strong></strong>bouton Mettre en ligne.
     </p>
     <p>
-      You need to decide if you want timed publishing to be active or not when updating the app, described in the following section.
-    </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Updating_the_app">Updating the app</h2>
+      Vous devez décider si vous souhaitez que la publication chronométrée soit active ou non lors de la mise à jour de l'application, comme décrit dans la section suivante.
+    </p>  </section><section class="bcls-section">
+    <h2 id="Updating_the_app">Mettre à jour l'application</h2>
     <p></p>
     <ol class="bcls-tasklist-restart">
       <li>
-        Sign in to the
-        <a href="https://play.google.com/apps/publish/">Google Play Console</a>.
-        You will see a landing page with your existing app(s) displayed. In the screenshot below, only the <em>BCLS Test</em> app exists.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/landing-page.png" alt="landing page after login" />
-        </figure>
+        Connectez-vous à la console<a href="https://play.google.com/apps/publish/"> Google Play</a>. Vous verrez une page de destination avec votre ou vos applications existantes affichées. Dans la capture d'écran ci-dessous, seule l'<em></em>application BCLS Test existe. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/landing-page.png" alt="page de destination après la connexion" /> </figure>
       </li>
-      <li>Click on the app you wish to update.</li>
+      <li>Cliquez sur l'application que vous souhaitez mettre à jour.</li>
       <li>
-        You will see your left-navigation is different than when you submitted a new app.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/left-navigation.png" alt="left navigation" />
-        </figure>
+        Vous verrez que votre navigation de gauche est différente de celle que vous avez affichée lorsque vous avez soumis une nouvelle application. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/left-navigation.png" alt="navigation de gauche" /> </figure>
       </li>
       <li>
-        The <strong>Release management > App releases</strong> section is where you handle creating both testing and production releases. For full details on completing this section, see the <a href="/publishing-apps/android/submitting-to-android.html#Complete_App_releases_information">Complete App releases information</a> section of the
-        <em>Submitting New Apps to the Android Store</em> document.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/app-releases.png" alt="app releases" />
-        </figure>
+        La<strong> section Gestion des</strong> versions &gt; Versions d'applications est l'endroit où vous gérez la création de versions de test et de production. Pour plus de détails sur la façon de remplir cette section, consultez la<a href="/publishing-apps/android/submitting-to-android.html#Complete_App_releases_information"> section Informations sur les versions</a> complètes de l'application du<em> document</em> Soumission de nouvelles applications sur l'Android Store. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/app-releases.png" alt="versions de l'application" /> </figure>
       </li>
       <li>
-        Update any information in the
-        <strong>Store presence > Store listing</strong> section. This section includes descriptions of your app as well as images used representing your app. For full details on completing this section, see the <a href="/publishing-apps/android/submitting-to-android.html#Complete_Store_listing_information">Complete Store listing information</a> section of the
-        <em>Submitting New Apps to the Android Store</em> document.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/store-listing.png" alt="store listing" />
-        </figure>
+        Mettez à jour toutes les informations dans la <strong></strong>section Présence dans la boutique &gt; Liste des boutiques. Cette section comprend des descriptions de votre application ainsi que des images utilisées pour représenter votre application. Pour plus de détails sur la façon de remplir cette section, consultez la<a href="/publishing-apps/android/submitting-to-android.html#Complete_Store_listing_information"> section Informations</a> complètes sur la liste de la boutique du<em> document</em> Soumission de nouvelles applications sur l'Android Store. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/store-listing.png" alt="liste de la boutique" /> </figure>
       </li>
       <li>
-        To be sure any subscriptions are updated to match subscriptions defined in Brightcove {{ site.product_short }}, select
-        <strong>In-app products > Subscriptions</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/subscriptions.png" alt="subscriptions" />
-        </figure>
+        Pour être sûr que tous les abonnements sont mis à jour pour correspondre aux abonnements définis dans Brightcove {{site.product_short}}, sélectionnez Produits<strong> intégrés à l'application &gt; Abonnements</strong>. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/update-android-to-bcb/subscriptions.png" alt="abonnements" /> </figure>
       </li>
       <li>
-        Follow the guidance detail in the
-        <a href="/publishing-apps/android/adding-subscriptions-in-android.html">Adding Subscriptions to Android</a> document to update existing subscriptions.
+        Suivez les instructions détaillées du<a href="/publishing-apps/android/adding-subscriptions-in-android.html"> document</a> Ajout d'abonnements à Android pour mettre à jour les abonnements existants.
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>  </section></article>

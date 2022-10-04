@@ -1,673 +1,476 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">Présentation</h2>
     <p>
-      With Brightcove {{ site.product_short }}, you will receive a generated device app which can be added to the Roku Channel Store.
+      Avec Brightcove {{site.product_short}}, vous recevrez une application pour appareil générée qui peut être ajoutée au Roku Channel Store.
     </p>
     <ul>
       <li>
-        Store details:
-        <a href="https://developer.roku.com/overview"> https://developer.roku.com/overview</a>
+        Détails de la boutique:<a href="https://developer.roku.com/overview"> https://developer.roku.com/overview</a>
       </li>
       <li>
-        Developer Account Setup:
-        <a href="https://my.roku.com/signup">https://my.roku.com/signup</a>
+        Configuration du compte développeur:<a href="https://my.roku.com/signup"> https://my.roku.com/signup</a>
       </li>
       <li>
-        Implementing Roku Search:
-        <a href="https://developer.roku.com/en-gb/docs/developer-program/discovery/search/implementing-search.md">https://developer.roku.com/en-gb/docs/developer-program/discovery/search/implementing-search.md</a>
+        Mise en œuvre de Roku Search:<a href="https://developer.roku.com/en-gb/docs/developer-program/discovery/search/implementing-search.md"> https://developer.roku.com/en-gb/docs/developer-program/discovery/search/implementing-search.md</a>
       </li>
-      <li>Suggested lead time for approval: Three weeks</li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--warning"> Note the following:
+      <li>Délai suggéré pour l'approbation: Trois semaines</li>
+    </ul> <aside class="bcls-aside bcls-aside--warning"> Notez ce qui suit:
       <ul>
-        <li>It can take up to 48 hours after publishing for your channel to be searchable on all devices. From the Roku site: <a href="https://partnersuccess.roku.com/hc/en-us/articles/360007222714" target="_blank"> My channel was just published, why can't I find it with Search?</a></li>
-        <li>If beta channels are created for testing, those channels expire in 45 days from creation.</li>
-        <li>It is not possible to set the Roku video player to use custom fonts for captions. For instance, Arabic and Urdu captions cannot be displayed in the Roku video player. From Roku's <a href="https://developer.roku.com/docs/developer-program/media-playback/closed-caption.md">Closed caption</a> documentation: <em>Roku's caption rendering will always use a built in Gotham font regardless of any font specified in the TTML. Likewise, font styles (like italics or bold) are also ignored. However, the Roku caption rendering will make the best guess effort at choosing the corresponding font size in the system Gotham font using the specified font size in the TTML.</em></li>
-      </ul>
-    </aside>
-    <h3>Required information for Roku:</h3>
+        <li>Cela peut prendre jusqu'à 48 heures après la publication pour que votre chaîne soit consultable sur tous les appareils. Sur le site de Roku: <a href="https://partnersuccess.roku.com/hc/en-us/articles/360007222714" target="_blank"> Ma chaîne vient d'être publiée, pourquoi ne puis-je pas la trouver avec Search&nbsp;?</a></li>
+        <li>Si des chaînes bêta sont créées à des fins de test, elles expirent 45 jours après leur création.</li>
+        <li>Il n'est pas possible de configurer le lecteur vidéo Roku pour utiliser des polices personnalisées pour les sous-titres. Par exemple, les sous-titres en arabe et en ourdou ne peuvent pas être affichés dans le lecteur vidéo Roku. Extrait de la<a href="https://developer.roku.com/docs/developer-program/media-playback/closed-caption.md"> documentation des</a> sous-titres codés de Roku: <em>Le rendu des légendes de Roku utilisera toujours une police Gotham intégrée, quelle que soit la police spécifiée dans le TTML. De même, les styles de police (tels que l'italique ou le gras) sont également ignorés. Cependant, le rendu des légendes Roku fera le meilleur effort de deviner pour choisir la taille de police correspondante dans la police Gotham système en utilisant la taille de police spécifiée dans le TTML.</em></li>
+      </ul> </aside>
+    <h3>Informations requises pour Roku:</h3>
     <ul>
       <li>
-        Poster and screenshot requirements
+        Exigences relatives aux affiches et aux captures
         <ul>
-          <li>Channel Poster (540x405)</li>
-          <li>Screenshots up to 1920x1080</li>
+          <li>Affiche Channel (540 x 405)</li>
+          <li>Captures d'écran jusqu'à 1920 x 1080</li>
         </ul>
       </li>
-      <li>Developer Email</li>
-      <li>Preferred URL for more information</li>
-      <li>Administrative Contact (Name / Phone / Email)</li>
-      <li>Technical Contact (Name / Phone / Email)</li>
-      <li>Client to set up App logins for QA in store</li>
+      <li>E-mail du développeur</li>
+      <li>URL préférée pour plus d'informations</li>
+      <li>Contact administratif (nom/téléphone/e-mail)</li>
+      <li>Contact technique (nom/téléphone/e-mail)</li>
+      <li>Le client doit configurer les identifiants de connexion aux applications pour l'assurance qualité en magasin</li>
     </ul>
     <!-- <figure class="bcls-figure">
- <img class="bcls-image--no-border" width="350" src="//{{ site.product_short }}.support.brightcove.com/assets/images/pages/home-example.png" alt="Home with carousels"> <figcaption class="bcls-caption--image">Home with carousels</figcaption> </figure> -->
-  </section>
-  <section class="bcls-section">
-    <h2 id="Getting_started">Getting started</h2>
-    <p>To access the Roku developer pages, follow these steps:</p>
+ <img class="bcls-image--no-border" width="350" src="//{{ site.product_short }}.support.brightcove.com/assets/images/pages/home-example.png" alt="Home with carousels"> <figcaption class="bcls-caption--image">Home with carousels</figcaption> </figure> -->  </section><section class="bcls-section">
+    <h2 id="Getting_started">Pour commencer</h2>
+    <p>Pour accéder aux pages des développeurs Roku, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          In a browser, navigate to the
-          <a href="https://my.roku.com/index">Roku Sign in</a> page.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/roku-login.png" alt="Roku sign in" />
-          <figcaption class="bcls-caption--image">Roku sign in</figcaption>
-        </figure>
+          Dans un navigateur, accédez à la<a href="https://my.roku.com/index"> page de connexion</a> Roku.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/roku-login.png" alt="Connexion Roku" /> <figcaption class="bcls-caption--image">Connexion Roku</figcaption> </figure>
       </li>
       <li>
         <p>
-          Either sign in with your account or create a new account.
+          Connectez-vous avec votre compte ou créez un nouveau compte.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Adding_a_channel">Adding a channel</h2>
-    <p>Learn how to add a channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Adding_a_channel">Ajout d'une chaîne</h2>
+    <p>Découvrez comment ajouter une chaîne.</p>
     <ol class="bcls-tasklist-restart">
-      <li>From the top navigation, click in the profile icon.</li>
+      <li>Dans la barre de navigation supérieure, cliquez sur l'icône de profil.</li>
       <li>
-        <p>In the drop-down menu, click on the <strong>Developers</strong> option. </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/profile-developer-option.png" alt="Developer options" width="400" height="600" />
-          <figcaption class="bcls-caption--image">Developer Options</figcaption>
-        </figure>
+        <p>Dans le menu déroulant, cliquez sur l'<strong>option</strong> Développeurs. </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/profile-developer-option.png" alt="Options pour les développeurs" width="400" height="600" /> <figcaption class="bcls-caption--image">Options pour les développeurs</figcaption> </figure>
       </li>
       <li>
         <p>
-          From the top navigation, select the <strong>Dashboard</strong> link.
+          Dans la barre de navigation supérieure, sélectionnez le<strong> lien</strong> Tableau de bord.
         </p>
       </li>
       <li>
         <p>
-          From the dashboard, you can manage your channels. Select the <strong>Add Channel</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/add-channel-button.png" alt="Manage Channels" />
-          <figcaption class="bcls-caption--image">Manage Channels</figcaption>
-        </figure>
+          Depuis le tableau de bord, vous pouvez gérer vos chaînes. Cliquez sur le<strong> bouton</strong> Ajouter une chaîne.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/add-channel-button.png" alt="Gérer les chaînes" /> <figcaption class="bcls-caption--image">Gérer les chaînes</figcaption> </figure>
       </li>
       <li>
         <p>
-          When the <strong>Developer SDK</strong> option is chosen, you will see options for a public or a non-certified channel.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/developer-sdk-channel.png" alt="Developer SDK Channel" />
-          <figcaption class="bcls-caption--image"> Developer SDK Channel
-          </figcaption>
-        </figure>
+          Lorsque l'<strong>option</strong> Developer SDK est sélectionnée, vous verrez des options pour une chaîne publique ou non certifiée.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/developer-sdk-channel.png" alt="Chaîne du SDK développeur" /> <figcaption class="bcls-caption--image"> Chaîne du SDK développeur </figcaption> </figure>
       </li>
       <li>
         <p>
-          Select <strong>Public</strong> when you want the channel to go to the store. Select <strong>Non-certified</strong> when you want to create a testing channel.
-        </p>
-        <aside class="bcls-aside bcls-aside--warning"> The channel name must be unique across both <strong>Public</strong> and <strong>Non-certified</strong> channels.
-        </aside>
+          Sélectionnez<strong> Public</strong> lorsque vous souhaitez que la chaîne soit diffusée dans la boutique. Sélectionnez<strong> Non certifié</strong> lorsque vous souhaitez créer un canal de test.
+        </p> <aside class="bcls-aside bcls-aside--warning"> Le nom de la chaîne doit être unique sur les<strong> chaînes</strong> publiques<strong> et</strong> non certifiées. </aside>
         <p>
-          We recommend the following:
+          Nous recommandons ce qui suit:
         </p>
         <ul>
           <li>
-            Create your <strong>Public</strong> channel name, for example <strong>Destinations</strong>.
+            Créez le nom de votre<strong> chaîne</strong> publique, par exemple<strong> Destinations</strong>.
           </li>
           <li>
             <p>
-              Create a <strong>Non-certified</strong> testing channel with a suffix of <strong>QA</strong>. So, in this case it would be named <strong>Destinations QA</strong>.
+              Créez un canal de<strong> test</strong> non certifié avec le suffixe<strong> QA</strong>. Donc, dans ce cas, il s'appellerait<strong> Destinations QA</strong>.
             </p>
           </li>
         </ul>
         <p>
-          First, we are creating the public channel.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/channel-public.png" alt="Public channel" />
-          <figcaption class="bcls-caption--image">Public channel</figcaption>
-        </figure>
+          Tout d'abord, nous créons la chaîne publique.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/channel-public.png" alt="Chaîne publique" /> <figcaption class="bcls-caption--image">Chaîne publique</figcaption> </figure>
       </li>
       <li>
         <p>
-          Next, we are creating the testing channel.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/channel-qa.png" alt="Testing channel" />
-          <figcaption class="bcls-caption--image">Testing channel</figcaption>
-        </figure>
+          Ensuite, nous créons le canal de test.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/channel-qa.png" alt="Canal de test" /> <figcaption class="bcls-caption--image">Canal de test</figcaption> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Channel_properties">Channel properties</h2>
-    <p>Properties are associated with each channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Channel_properties">Propriétés du canal</h2>
+    <p>Les propriétés sont associées à chaque canal.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to your Developer Dashboard and select the <strong>Manage My Channels</strong> link.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/manage-properties.png" alt="Manage Properties" />
-          <figcaption class="bcls-caption--image">Manage Properties</figcaption>
-        </figure>
+          Revenez à votre tableau de bord des développeurs et sélectionnez le<strong> lien</strong> Gérer mes chaînes.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/manage-properties.png" alt="Gérer les propriétés" /> <figcaption class="bcls-caption--image">Gérer les propriétés</figcaption> </figure>
       </li>
       <li>
         <p>
-          For your channel, select the
-          <strong>Preview and Update</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/update-properties.png" alt="Update Properties" />
-          <figcaption class="bcls-caption--image">Update Properties</figcaption>
-        </figure>
+          Pour votre chaîne, cliquez sur le<strong> bouton</strong> Aperçu et mise à jour.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/update-properties.png" alt="Propriétés de la mise" /> <figcaption class="bcls-caption--image">Propriétés de la mise</figcaption> </figure>
       </li>
       <li>
         <p>
-          Expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Properties</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/properties-dropdown.png" alt="Properties dropdown menu" />
-          <figcaption class="bcls-caption--image"> Properties dropdown menu
-          </figcaption>
-        </figure>
+          Développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez<strong> Propriétés</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/properties-dropdown.png" alt="Menu déroulant des propriétés" /> <figcaption class="bcls-caption--image"> Menu déroulant des propriétés </figcaption> </figure>
       </li>
       <li>
         <p>
-          You should see a list of channel properties. On the left side, you will see a list of Channel Store countries where your channel will appear. For testing, you can select all countries. For your live channel, choose the countries where you want your channel to be seen.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/countries.png" alt="Channel Store countries" />
-          <figcaption class="bcls-caption--image"> Channel Store countries
-          </figcaption>
-        </figure>
+          Vous devriez voir la liste des propriétés des canaux. Sur le côté gauche, vous verrez la liste des pays du Channel Store dans lesquels votre chaîne sera diffusée. Pour les tests, vous pouvez sélectionner tous les pays. Pour votre chaîne en direct, choisissez les pays dans lesquels vous souhaitez que votre chaîne soit diffusée.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/countries.png" alt="Pays du Channel Store" /> <figcaption class="bcls-caption--image"> Pays du Channel Store </figcaption> </figure>
       </li>
       <li>
         <p>
-          For accessibility features and compliance, select <strong>Yes</strong>. All Brightcove {{ site.product_short }} apps meet these requirements.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/accessibility.png" alt="Accessibility" />
-          <figcaption class="bcls-caption--image">Accessibility</figcaption>
-        </figure>
+          Pour les fonctionnalités d'accessibilité et la conformité, sélectionnez<strong> Oui</strong>. Toutes les applications Brightcove {{site.product_short}} répondent à ces exigences.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/accessibility.png" alt="Accessibilité" /> <figcaption class="bcls-caption--image">Accessibilité</figcaption> </figure>
       </li>
       <li>
         <p>
-          Based on your content, choose the appropriate content rating.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/content-rating.png" alt="Content rating" />
-          <figcaption class="bcls-caption--image">Content rating</figcaption>
-        </figure>
+          En fonction de votre contenu, choisissez la note de contenu appropriée.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/content-rating.png" alt="Évaluation du contenu" /> <figcaption class="bcls-caption--image">Évaluation du contenu</figcaption> </figure>
       </li>
       <li>
         <p>
-          Select whether a customer account is required to access your channel features.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/customer-account.png" alt="Customer account" />
-          <figcaption class="bcls-caption--image">Customer account</figcaption>
-        </figure>
+          Indiquez si un compte client est requis pour accéder aux fonctionnalités de votre chaîne.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/customer-account.png" alt="Compte client" /> <figcaption class="bcls-caption--image">Compte client</figcaption> </figure>
       </li>
       <li>
         <p>
-          Enter the URL for the privacy policy associated with your entire app.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/privacy-policy.png" alt="Privacy policy" />
-          <figcaption class="bcls-caption--image">Privacy policy</figcaption>
-        </figure>
+          Saisissez l'URL de la politique de confidentialité associée à l'ensemble de votre application.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/privacy-policy.png" alt="Politique de confidentialité" /> <figcaption class="bcls-caption--image">Politique de confidentialité</figcaption> </figure>
       </li>
       <li>
         <p>
-          The Vanity Access Code is automatically generated by Roku. You can leave this value.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/vanity-code.png" alt="Vanity code" />
-          <figcaption class="bcls-caption--image">Vanity code</figcaption>
-        </figure>
+          Le code d'accès Vanity est généré automatiquement par Roku. Vous pouvez laisser cette valeur.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/vanity-code.png" alt="Code de vanité" /> <figcaption class="bcls-caption--image">Code de vanité</figcaption> </figure>
       </li>
       <li>
         <p>
-          Select the languages that you want to support.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/langugages.png" alt="Languages" />
-          <figcaption class="bcls-caption--image">Languages</figcaption>
-        </figure>
+          Sélectionnez les langues que vous souhaitez prendre en charge.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/langugages.png" alt="Langues" /> <figcaption class="bcls-caption--image">Langues</figcaption> </figure>
       </li>
       <li>
         <p>
-          For <strong>Required Features</strong>, first choose the <strong>Classification</strong> that best describes your channel.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/classification.png" alt="Classification" />
-          <figcaption class="bcls-caption--image">Classification</figcaption>
-        </figure>
+          Pour les fonctionnalités<strong> requises</strong>, choisissez d'abord la<strong> classification</strong> qui décrit le mieux votre chaîne.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/classification.png" alt="Classement" /> <figcaption class="bcls-caption--image">Classement</figcaption> </figure>
       </li>
       <li>
         <p>
-          Then, specify whether your app requires an internet connection. When you are done updating the properties for your channel, select the <strong>Save</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/internet.png" alt="Internet connection" />
-          <figcaption class="bcls-caption--image"> Internet connection
-          </figcaption>
-        </figure>
+          Ensuite, indiquez si votre application nécessite une connexion Internet. Lorsque vous avez terminé de mettre à jour les propriétés de votre chaîne, cliquez sur le<strong> bouton</strong> Enregistrer.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/properties/internet.png" alt="connexion Internet" /> <figcaption class="bcls-caption--image"> connexion Internet </figcaption> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Channel_store_info">Channel store info</h2>
-    <p>Here you will add descriptions and icons for your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Channel_store_info">Informations sur la boutique Channel</h2>
+    <p>Vous allez y ajouter des descriptions et des icônes pour votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Channel Store Info</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/store-info/dropdown-menu.png" alt="Channel Store Info dropdown menu" />
-          <figcaption class="bcls-caption--image"> Channel Store Info dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez Informations sur la boutique de<strong> distribution</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/store-info/dropdown-menu.png" alt="Menu déroulant Informations sur la boutique de chaînes" /> <figcaption class="bcls-caption--image"> Menu déroulant Informations sur la boutique de chaînes </figcaption> </figure>
       </li>
       <li>
         <p>
-          For Channel Store Info, enter the following field values: </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/store-info/store-info-screen.png" alt="Channel Store Info" />
-          <figcaption class="bcls-caption--image"> Channel Store Info
-          </figcaption>
-        </figure>
+          Pour Channel Store Info, entrez les valeurs de champ suivantes: </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/store-info/store-info-screen.png" alt="Informations sur le Channel Store" /> <figcaption class="bcls-caption--image"> Informations sur le Channel Store </figcaption> </figure>
         <ul>
-          <li>
-            <strong>Channel Name</strong> - This should already be populated with your channel name.
+          <li> <strong>Nom de la chaîne</strong> - Il devrait déjà être renseigné avec le nom de votre chaîne.
           </li>
-          <li>
-            <strong>Description</strong> - Add a detailed description about the channel, that will appear in the Channel Store description. (300 characters)
+          <li> <strong>Description</strong> - Ajoutez une description détaillée de la chaîne, qui apparaîtra dans la description du Channel Store. (300 caractères)
           </li>
-          <li>
-            <strong>Web Description</strong> - Enter a channel description for U.S. web-based marketing of your channel. This will not display on devices. (1500 characters)
+          <li> <strong>Description du site Web</strong>: saisissez une description de chaîne pour le marketing Web américain de votre chaîne. Cela ne s'affichera pas sur les appareils. (1500 caractères)
           </li>
-          <li>
-            <strong>Channel Poster</strong> - Add a poster image that will display in the Roku Channel Store. (540 x 405 JPEG or PNG)
+          <li> <strong>Affiche de la chaîne</strong> - Ajoutez une image d'affiche qui s'affichera dans le Roku Channel Store. (JPEG ou PNG 540 x 405)
           </li>
-          <li>
-            <strong>Descriptive Category</strong> - Select the category where you want to channel to show up. (Example: Sports, Drama, Comedy, etc.)
+          <li> <strong>Catégorie descriptive</strong> - Sélectionnez la catégorie dans laquelle vous souhaitez que la chaîne apparaisse. (Exemple: Sports, théâtre, comédie, etc.)
           </li>
-          <li>
-            <strong>Domestic Region</strong> - Select the country where your channel is considered native and/or domestic. Your channel will appear in the "International" category of all regional Channel Stores that include your channel, with the exception of the Channel Store associated with your Domestic Region.
+          <li> <strong>Domestic Region</strong> - Sélectionnez le pays dans lequel votre chaîne est considérée comme native et/ou nationale. Votre chaîne apparaîtra dans la catégorie International-fr/ de toutes les boutiques de distribution régionales qui incluent votre chaîne, à l'exception de la boutique de distribution associée à votre région nationale.
           </li>
         </ul>
       </li>
       <li>
         <p>
-          When you are done adding Channel Store Info, select the <strong>Save</strong> button.
+          Lorsque vous avez terminé d'ajouter les informations du magasin de distribution, cliquez sur le<strong> bouton</strong> Enregistrer.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Verify_your_account_and_link_a_device">Verify your account and link a device</h2>
-    <p>After completing the Roku channel set up, it is important to verify your developer account.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Verify_your_account_and_link_a_device">Vérifiez votre compte et associez un appareil</h2>
+    <p>Après avoir terminé la configuration du canal Roku, il est important de vérifier votre compte développeur.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the <strong>Manage Channels</strong> screen and select the <strong>Preview and Update</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/update-properties.png" alt="Update Properties" />
-          <figcaption class="bcls-caption--image">Update Properties</figcaption>
-        </figure>
+          Revenez à l'<strong>écran</strong> Gérer les chaînes et sélectionnez le<strong> bouton</strong> Aperçu et mise à jour.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/update-properties.png" alt="Propriétés de la mise" /> <figcaption class="bcls-caption--image">Propriétés de la mise</figcaption> </figure>
       </li>
       <li>
-        <p>Expand <strong>Preview and Publish</strong> and select <strong>Package Upload</strong>.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload-option.png" alt="Package Upload" />
-          <figcaption class="bcls-caption--image">Package Upload</figcaption>
-        </figure>
+        <p>Développez<strong> Aperçu et publication,</strong> puis sélectionnez Chargement de<strong> package</strong>.</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload-option.png" alt="Chargement du package" /> <figcaption class="bcls-caption--image">Chargement du package</figcaption> </figure>
       </li>
       <li>
-        <p>Select <strong>Send verification email</strong> button.</p>
-        <aside class="bcls-aside bcls-aside--information">At the start of the Channel setup, make sure that you use your organization's email address that will be used for developer rights.</aside>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/email-verification.png" alt="Email verification" />
-          <figcaption class="bcls-caption--image">Email verification</figcaption>
-        </figure>
+        <p>Sélectionnez le<strong> bouton</strong> Envoyer un e-mail de vérification.</p> <aside class="bcls-aside bcls-aside--information">Au début de la configuration de la chaîne, assurez-vous d'utiliser l'adresse e-mail de votre organisation qui sera utilisée pour les droits de développeur.</aside> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/email-verification.png" alt="Vérification des e-mails" /> <figcaption class="bcls-caption--image">Vérification des e-mails</figcaption> </figure>
       </li>
       <li>
         <p>
-          Once you have verified your developer email account, you will be prompted to link your device and add a payment method. If you have already done this, you can skip to the next section.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload1.png" alt="Package information" />
-          <figcaption class="bcls-caption--image">Package information</figcaption>
-        </figure>
+          Une fois que vous aurez vérifié votre compte de messagerie développeur, vous serez invité à associer votre appareil et à ajouter un mode de paiement. Si vous l'avez déjà fait, vous pouvez passer à la section suivante.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload1.png" alt="Informations sur le package" /> <figcaption class="bcls-caption--image">Informations sur le package</figcaption> </figure>
       </li>
       <li>
-        <p>When linking your Roku device, make sure your device has the same registered email as in the verification steps. For best results, we recommend that you reset your Roku device.</p>
-        <p>To reset your Roku device:</p>
+        <p>Lorsque vous associez votre appareil Roku, assurez-vous que votre appareil dispose de la même adresse e-mail enregistrée que lors des étapes de vérification. Pour de meilleurs résultats, nous vous recommandons de réinitialiser votre appareil Roku.</p>
+        <p>Pour réinitialiser votre appareil Roku:</p>
         <ol>
-          <li>Select <strong>Settings</strong>.</li>
-          <li>Select <strong>System</strong>.</li>
-          <li>Select <strong>Advanced System Settings</strong>.</li>
-          <li>Select <strong>Factory Reset</strong>.</li>
+          <li>Sélectionnez<strong> Paramètres</strong>.</li>
+          <li>Sélectionnez<strong> Système</strong>.</li>
+          <li>Sélectionnez Paramètres système<strong> avancés</strong>.</li>
+          <li>Sélectionnez<strong> Factory Reset</strong>.</li>
         </ol>
-        <p>Here are some helpful links:</p>
+        <p>Voici quelques liens utiles:</p>
         <ul>
-          <li><a href="https://my.roku.com/link">Link your Roku TV</a></li>
-          <li><a href="https://www.youtube.com/watch?v=qoZCipuRsfM">How to set up the Roku Express/Express+</a></li>
+          <li><a href="https://my.roku.com/link">Liez votre téléviseur Roku</a></li>
+          <li><a href="https://www.youtube.com/watch?v=qoZCipuRsfM">Comment configurer le Roku Express/Express+</a></li>
         </ul>
       </li>
       <li>
         <p>
-          Upon completion, you should see the following screen: </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload2.png" alt="Package information complete" />
-          <figcaption class="bcls-caption--image">Package information complete</figcaption>
-        </figure>
+          Une fois terminé, vous devriez voir l'écran suivant: </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/package-upload2.png" alt="Informations sur le package complètes" /> <figcaption class="bcls-caption--image">Informations sur le package complètes</figcaption> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Add_channel_with_a_code">Add channel with a code</h2>
-    <p>You can use a vanity code to add your app channel to your Roku device.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Add_channel_with_a_code">Ajouter une chaîne avec un code</h2>
+    <p>Vous pouvez utiliser un code personnalisé pour ajouter la chaîne de votre application à votre appareil Roku.</p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>Expand your profile dropdown menu and select <strong>My account</strong>.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/my-account.png" alt="My account" />
-          <figcaption class="bcls-caption--image">My account</figcaption>
-        </figure>
+        <p>Développez le menu déroulant de votre profil et sélectionnez<strong> Mon compte</strong>.</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/my-account.png" alt="Mon compte" /> <figcaption class="bcls-caption--image">Mon compte</figcaption> </figure>
       </li>
       <li>
-        <p>Select the <strong>Add channel with a code</strong> link.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/add-channel-with-code.png" alt="Add channel with a code" />
-          <figcaption class="bcls-caption--image">Add channel with a code</figcaption>
-        </figure>
+        <p>Sélectionnez le<strong> lien</strong> Ajouter une chaîne avec un code.</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/add-channel-with-code.png" alt="Ajouter une chaîne avec un code" /> <figcaption class="bcls-caption--image">Ajouter une chaîne avec un code</figcaption> </figure>
       </li>
       <li>
-        <p>In the <strong>Add channel</strong> dialog, do the following:</p>
+        <p>Dans la boîte de<strong> dialogue</strong> Ajouter un canal, procédez comme suit:</p>
         <ol>
-          <li>Enter the <strong>Channel access code</strong> that we provide to you.</li>
-          <li>Check the <strong>I'm not a robot</strong> box.</li>
-          <li>Select <strong>Add channel</strong>.</li>
-        </ol>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/add-channel.png" alt="Add channel" />
-          <figcaption class="bcls-caption--image">Add channel</figcaption>
-        </figure>
+          <li>Saisissez le code d'accès à la<strong> chaîne</strong> que nous vous avons fourni.</li>
+          <li>Cochez la case<strong> Je ne suis pas un robot</strong>.</li>
+          <li>Sélectionnez<strong> Ajouter une chaîne</strong>.</li>
+        </ol> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/setup/add-channel.png" alt="Ajouter une chaîne" /> <figcaption class="bcls-caption--image">Ajouter une chaîne</figcaption> </figure>
       </li>
       <li>
-        <p>Once the channel has been added to your Roku account, follow these steps to review your app on your Roku TV:</p>
+        <p>Une fois la chaîne ajoutée à votre compte Roku, suivez ces étapes pour vérifier votre application sur votre téléviseur Roku:</p>
         <ol>
-          <li>Select <strong>Settings</strong>.</li>
-          <li>Select <strong>System</strong>.</li>
-          <li>Select <strong>System Update</strong>.</li>
+          <li>Sélectionnez<strong> Paramètres</strong>.</li>
+          <li>Sélectionnez<strong> Système</strong>.</li>
+          <li>Sélectionnez Mise à jour<strong> du système</strong>.</li>
         </ol>
-        <p>Your app should now be visible for your review.</p>
+        <p>Votre application devrait désormais être visible pour votre évaluation.</p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Monetization">Monetization</h2>
-    <p>Here you will add monetization information about your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Monetization">Monétisation</h2>
+    <p>Vous allez ajouter ici les informations de monétisation de votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Monetization</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/monetization/monetization-option.png" alt="Monetization dropdown menu" />
-          <figcaption class="bcls-caption--image"> Monetization dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez<strong> Monétisation</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/monetization/monetization-option.png" alt="Menu déroulant Monétisation" /> <figcaption class="bcls-caption--image"> Menu déroulant Monétisation </figcaption> </figure>
       </li>
       <li>
         <p>
-          Specify whether your channel will contain adds or support a subscription model.</p>
-        <aside class="bcls-aside bcls-aside--information">Notice that even if you are using Brightcove SSAI, you will need to enroll in Roku's <strong>Partner Payouts Program</strong>. It is a Roku store requirement to make the Ads callback during Ad playing.</aside>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/monetization/monetization-page.png" alt="Monetization" />
-          <figcaption class="bcls-caption--image">Monetization</figcaption>
-        </figure>
+          Spécifiez si votre chaîne contiendra des ajouts ou prendra en charge un modèle d'abonnement.</p> <aside class="bcls-aside bcls-aside--information">Notez que même si vous utilisez Brightcove SSAI, vous devrez vous inscrire au programme de paiement des<strong> partenaires de Roku</strong>. C'est une exigence de la boutique Roku pour effectuer le rappel des publicités pendant la lecteur de la publicité.</aside> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/monetization/monetization-page.png" alt="Monétisation" /> <figcaption class="bcls-caption--image">Monétisation</figcaption> </figure>
         <p>
-          For subscription channels, you will include the following information: </p>
+          Pour les chaînes d'abonnement, vous devez inclure les informations suivantes: </p>
         <ul>
-          <li>
-            <strong>Purchase Type</strong> - How users are billed for the channel. (One time, monthly, yearly, etc.)
+          <li> <strong>Purchase Type</strong>: mode de facturation des utilisateurs pour la chaîne. (Une fois, mensuellement, annuellement, etc.)
           </li>
-          <li>
-            <strong>Price Tier</strong> - Select a value from the drop-down menu. The purchase price for EU Channel Store countries includes VAT. Proceeds are based on pre-tax (net) prices.
+          <li> <strong>Niveau de prix</strong> - Sélectionnez une valeur dans le menu déroulant. Le prix d'achat pour les pays de l'EU Channel Store inclut la TVA. Le produit est basé sur les prix (nets) avant impôts.
           </li>
         </ul>
       </li>
       <li>
         <p>
-          When you are done adding Monetization information, select the <strong>Save</strong> button.
+          Lorsque vous avez terminé d'ajouter les informations de monétisation, cliquez sur le<strong> bouton</strong> Enregistrer.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Screenshots">Screenshots</h2>
-    <p>Here you can add screenshots to your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Screenshots">Captures d'écran</h2>
+    <p>Ici, vous pouvez ajouter des captures d'écran à votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Screenshots</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/screenshots/screenshots-menu.png" alt="Screenshots dropdown menu" />
-          <figcaption class="bcls-caption--image"> Screenshots dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez<strong> Captures d'écran</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/screenshots/screenshots-menu.png" alt="Menu déroulant des captures d'écran" /> <figcaption class="bcls-caption--image"> Menu déroulant des captures d'écran </figcaption> </figure>
       </li>
       <li>
         <p>
-          Add screenshots that will appear in the Channel Store.
+          Ajoutez des captures d'écran qui apparaîtront dans le Channel Store.
         </p>
         <p>
-          You can add up to 6 screenshots. Each must be 1920 x 1080 JPEG or PNG files.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/screenshots/screenshots-page.png" alt="Screenshots" />
-          <figcaption class="bcls-caption--image">Screenshots</figcaption>
-        </figure>
+          Vous pouvez ajouter jusqu'à 6 captures d'écran. Chacun doit être composé de fichiers JPEG ou PNG de 1 920 x 1 080.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/screenshots/screenshots-page.png" alt="Captures d'écran" /> <figcaption class="bcls-caption--image">Captures d'écran</figcaption> </figure>
       </li>
       <li>
         <p>
-          When you are done adding screenshots, select the <strong>Save</strong> button.
+          Lorsque vous avez terminé d'ajouter des captures d'écran, cliquez sur le<strong> bouton</strong> Enregistrer.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Support_information">Support information</h2>
-    <p>Provide contact information to help with support of your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Support_information">Informations sur l'assistance</h2>
+    <p>Fournissez des informations de contact pour vous aider à prendre en charge votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Support Information</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/support-info/support-menu.png" alt="Support Information dropdown menu" />
-          <figcaption class="bcls-caption--image"> Support Information dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez Informations de<strong> support</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/support-info/support-menu.png" alt="Menu déroulant Informations sur le support" /> <figcaption class="bcls-caption--image"> Menu déroulant Informations sur le support </figcaption> </figure>
       </li>
       <li>
         <p>
-          For Support information, enter the following field values: </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/support-info/support-page.png" alt="Support information" />
-          <figcaption class="bcls-caption--image"> Support information
-          </figcaption>
-        </figure>
+          Pour obtenir des informations sur le support, saisissez les valeurs de champ suivantes: </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/support-info/support-page.png" alt="Informations sur l'assistance" /> <figcaption class="bcls-caption--image"> Informations sur l'assistance </figcaption> </figure>
         <ul>
-          <li>
-            <strong>Developer Email</strong> - Enter your developer email address. If it is not correct, update your contact information.
+          <li> <strong>Adresse e-mail du développeur</strong>: saisissez l'adresse e-mail de votre développeur. Si ce n'est pas le cas, mettez à jour vos coordonnées.
+          </li>
+          <li> <strong>URL préférée</strong>: spécifiez l'URL de votre chaîne. Cela peut être utilisé par le site Web ou la newsletter de Roku pour créer un lien vers votre chaîne.
+          </li>
+          <li> <strong>Contact de l'assistance aux utilisateurs finaux</strong> - Fournissez une page Web, une adresse e-mail ou un numéro de téléphone ou plusieurs de ces numéros. Roku l'utilisera lorsque le service client sera contacté au sujet de votre chaîne. (300 caractères) Ceci est obligatoire.
           </li>
           <li>
-            <strong>Preferred URL</strong> - Specify the URL for your channel.
-            This may be used by the Roku website or newsletter to link to your channel.
-          </li>
-          <li>
-            <strong>End User Support Contact</strong> - Provide a web page, email address or phone number or multiple of these. Roku will use this when customer service is contacted about your channel. (300 characters) This is required.
-          </li>
-          <li>
-            <p>
-              <strong>Test Accounts & Deep Linking Parameters</strong> - Tell Brightcove which assets you want to open as deep links, and we will update the deep linking parameters. If you do not want to set up an account sharing, then Brightcove will provide you with the parameters.
+            <p> <strong>Tester les paramètres des comptes et des liens profonds</strong>: indiquez à Brightcove les ressources que vous souhaitez ouvrir en tant que deep links, et nous mettrons à jour les paramètres de deep linking. Si vous ne souhaitez pas configurer de partage de compte, Brightcove vous fournira les paramètres.
             </p>
             <p>
-              You will also provide credentials for 3 test accounts. These accounts will be used for customer support, demos and QA. (1500 characters) If you have accounts with different subscriptions, you need to list them here so that the Channel Store has access to all of them.
+              Vous fournirez également des informations d'identification pour 3 comptes de test. Ces comptes seront utilisés pour le support client, les démonstrations et l'assurance qualité. (1500 caractères) Si vous avez des comptes avec des abonnements différents, vous devez les répertorier ici afin que le Channel Store ait accès à tous les comptes.
             </p>
           </li>
-          <li>
-            <strong>Administrative Contact</strong> - Provide the administrative contact information for your app.
+          <li> <strong>Contact administratif</strong> - Fournissez les coordonnées administratives de votre application.
           </li>
-          <li>
-            <strong>Technical Contact</strong> - Provide the technical contact information for your app.
+          <li> <strong>Contact technique</strong> - Fournissez les coordonnées techniques de votre application.
           </li>
         </ul>
       </li>
       <li>
         <p>
-          When you are done adding Support information, select the <strong>Save</strong> button.
+          Lorsque vous avez terminé d'ajouter les informations de support, cliquez sur le<strong> bouton</strong> Enregistrer.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Package_upload">Package upload</h2>
-    <p>Upload a package to your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Package_upload">Chargement du package</h2>
+    <p>Téléchargez un package sur votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Package Upload</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/package/package-menu.png" alt="Package Upload dropdown menu" />
-          <figcaption class="bcls-caption--image"> Package Upload dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez Téléchargement<strong> du package</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/package/package-menu.png" alt="Menu déroulant Chargement de package" /> <figcaption class="bcls-caption--image"> Menu déroulant Chargement de package </figcaption> </figure>
       </li>
       <li>
         <p>
-          First, you need to verify your email address. Then, you will be able to upload.
+          Tout d'abord, vous devez vérifier votre adresse e-mail. Ensuite, vous serez en mesure de télécharger.
         </p>
       </li>
       <li>
         <p>
-          For Package Upload, enter the following field values: </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/package/package-page.png" alt="Package Upload" />
-          <figcaption class="bcls-caption--image">Package Upload</figcaption>
-        </figure>
+          Pour le chargement du package, entrez les valeurs de champ suivantes: </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/package/package-page.png" alt="Chargement du package" /> <figcaption class="bcls-caption--image">Chargement du package</figcaption> </figure>
         <ul>
-          <li>
-            <strong>Channel Version</strong> - Specify the version of your app, starting with version 1.0.
+          <li> <strong>Channel Version</strong> - Spécifiez la version de votre application, en commençant par la version 1.0.
           </li>
-          <li>
-            <strong>Minimum Firmware</strong> - Select the Roku firmware version. The package will only run on devices that support the minimum firmware version or higher. The latest stable build version that we recommend is Roku v9.2 bl.
+          <li> <strong>Microprogramme minimum</strong> - Sélectionnez la version du microprogramme Roku. Le package ne s'exécutera que sur les appareils prenant en charge la version minimale du microprogramme ou supérieure. La dernière version stable que nous recommandons est Roku v9.2 bl.
           </li>
-          <li>
-            <strong>Package File</strong> - The package file can be uploaded by you or by Brightcove. This file will have a similar name to: {{ site.product_short }}_1.0.6138.pkg.
+          <li> <strong>Fichier de package</strong>: le fichier de package peut être téléchargé par vous ou par Brightcove. Ce fichier portera un nom similaire à: {{site.product_short}} _1.0.6138.pkg.
           </li>
         </ul>
       </li>
       <li>
         <p>
-          When you are done adding Package Upload information, select the <strong>Save</strong> button.
+          Lorsque vous avez terminé d'ajouter les informations de chargement de package, cliquez sur le<strong> bouton</strong> Enregistrer.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Static_analysis">Static analysis</h2>
-    <p>Create an analysis report about your channel.</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Static_analysis">Analyse statique</h2>
+    <p>Créez un rapport d'analyse sur votre chaîne.</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Static Analysis</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/static-analysis/static-analysis-menu.png" alt="Static Analysis dropdown menu" />
-          <figcaption class="bcls-caption--image"> Static Analysis dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez Analyse<strong> statique</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/static-analysis/static-analysis-menu.png" alt="Menu déroulant Analyse statique" /> <figcaption class="bcls-caption--image"> Menu déroulant Analyse statique </figcaption> </figure>
       </li>
       <li>
         <p>
-          When you upload a package in the previous section, then your package is analyzed for errors in structure or syntax. A table may be shown with errors and warnings.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/static-analysis/static-analysis-page.png" alt="Static Analysis" />
-          <figcaption class="bcls-caption--image">Static Analysis</figcaption>
-        </figure>
+          Lorsque vous chargez un package dans la section précédente, votre package est analysé à la recherche d'erreurs de structure ou de syntaxe. Un tableau contenant des erreurs et des avertissements peut s'afficher.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/static-analysis/static-analysis-page.png" alt="Analyse statique" /> <figcaption class="bcls-caption--image">Analyse statique</figcaption> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Preview_and_publish">Preview and publish</h2>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Preview_and_publish">Prévisualiser et publier</h2>
     <p>
-      When you are done filling out all of the forms related to your channel, you will be shown the <strong>Preview and Publish</strong> screen.
+      Lorsque vous aurez terminé de remplir tous les formulaires relatifs à votre chaîne, l'<strong>écran</strong> Aperçu et publication s'affichera.
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Return to the Preview and Publish page, expand the <strong>Preview and Publish</strong> dropdown menu, and select <strong>Preview and Publish</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/publish/publish-menu.png" alt="Preview and Publish dropdown menu" />
-          <figcaption class="bcls-caption--image"> Preview and Publish dropdown menu
-          </figcaption>
-        </figure>
+          Revenez à la page Aperçu et publication, développez le menu<strong> déroulant</strong> Aperçu et publication, puis sélectionnez<strong> Aperçu et publication</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/publish/publish-menu.png" alt="Menu déroulant Aperçu et publication" /> <figcaption class="bcls-caption--image"> Menu déroulant Aperçu et publication </figcaption> </figure>
       </li>
       <li>
         <p>
-          This page gives you a summary preview of you channel.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/publish/publish-page.png" alt="Preview and Publish" />
-          <figcaption class="bcls-caption--image"> Preview and Publish
-          </figcaption>
-        </figure>
+          Cette page vous donne un aperçu récapitulatif de votre chaîne.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/roku/publish/publish-page.png" alt="Prévisualiser et publier" /> <figcaption class="bcls-caption--image"> Prévisualiser et publier </figcaption> </figure>
       </li>
       <li>
         <p>
-          When you are ready, select the <strong>Submit</strong> button to publish your channel.
+          Lorsque vous êtes prêt, cliquez sur le<strong> bouton</strong> Envoyer pour publier votre chaîne.
         </p>
       </li>
       <li>
         <p>
-          Your app will be checked by the Roku store to see if it has any issues. If your channel is rejected for any reason, an email will be sent to the <strong>Developer Email</strong> that you set in the <strong>Support Information</strong> screen. Review the reasons for rejection, and create a Brightcove support ticket to have the issues resolved.
+          Votre application sera vérifiée par la boutique Roku pour voir si elle rencontre des problèmes. Si votre chaîne est rejetée pour quelque raison que ce soit, un e-mail sera envoyé à l'adresse e-mail du<strong> développeur</strong> que vous avez définie dans l'<strong>écran Informations de</strong> support. Passez en revue les raisons du refus et créez un ticket de support Brightcove pour résoudre les problèmes.
         </p>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Updating_your_channel">Updating your channel</h2>
-    <p>If you want to update an existing app, follow these steps:</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Updating_your_channel">Mettre à jour votre chaîne</h2>
+    <p>Si vous souhaitez mettre à jour une application existante, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Create a new Roku package.
+          Créez un nouveau package Roku.
         </p>
         <p>
-          Give the new package a unique id and password. Provide Brightcove the new package along with the keys to this package. We need the new information to submit the new package to the store.
+          Donnez au nouveau package un identifiant et un mot de passe uniques. Fournissez à Brightcove le nouveau package ainsi que les clés de ce package. Nous avons besoin des nouvelles informations pour soumettre le nouveau colis à la boutique.
         </p>
         <p>
-          Remember, if you want to change channel names, they must be unique within the Channel Store.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/updating-channel/manage-channels.png" alt="Manage Channels" />
-          <figcaption class="bcls-caption--image">Manage Channels</figcaption>
-        </figure>
+          N'oubliez pas que si vous souhaitez modifier les noms des chaînes, ceux-ci doivent être uniques dans le Channel Store.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" width="75%" src="/assets/images/s-publishing-apps-img/roku/updating-channel/manage-channels.png" alt="Gérer les chaînes" /> <figcaption class="bcls-caption--image">Gérer les chaînes</figcaption> </figure>
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>  </section></article>

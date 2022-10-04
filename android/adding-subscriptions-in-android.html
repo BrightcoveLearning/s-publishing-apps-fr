@@ -1,230 +1,161 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <aside class="bcls-aside bcls-aside--information">Note that it can take up to 24 hours for changes to be reflected in your account.</aside>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section"> <aside class="bcls-aside bcls-aside--information"> Notez que cela peut prendre jusqu'à 24 heures pour que les modifications soient répercutées sur votre compte.</aside>
 
-    <h2 id="Introduction">Introduction</h2>
-    <p>This document focuses on two topics:</p>
+    <h2 id="Introduction">Présentation</h2>
+    <p>Ce document se concentre sur deux sujets:</p>
     <ul>
-      <li>Creating a subscription</li>
-      <li>Creating a service account</li>
+      <li>Création d'un abonnement</li>
+      <li>Création d'un compte de service</li>
     </ul>
     <p>
-      Subscriptions need to be created in Brightcove {{ site.product_short }}, then referenced in the <em>Google Play Console</em>. Instructions for creating a subscription in Brightcove {{ site.product_short }} are detailed in the <a href="/monetization/general/creating-svod-plan.html">Creating an SVOD Plan</a> document. This document details how to create the corresponding subscription for Android.
+      Les abonnements doivent être créés dans Brightcove {{site.product_short}}, puis référencés dans la console<em> Google Play</em>. Les instructions pour créer un abonnement dans Brightcove {{site.product_short}} sont détaillées dans le<a href="/monetization/general/creating-svod-plan.html"> document</a> Création d'un plan SVOD. Ce document explique comment créer l'abonnement correspondant pour Android.
     </p>
     <p>
-      A service account allows you to update your Brightcove {{ site.product_short }} app on the Google Play Store, which is especially helpful when testing subscriptions.
-      Later in this document you will find steps to create a service account and generate the file needed for Google Play server to server subscriptions.
-    </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Adding a subscription">Adding a subscription</h2>
+      Un compte de service vous permet de mettre à jour votre application Brightcove {{site.product_short}} sur le Google Play Store, ce qui est particulièrement utile lorsque vous testez des abonnements. Plus loin dans ce document, vous trouverez les étapes à suivre pour créer un compte de service et générer le fichier nécessaire aux abonnements serveur à serveur Google Play.
+    </p>  </section><section class="bcls-section">
+    <h2 id="Adding a subscription">Ajout d'un abonnement</h2>
     <p>
-      Creating a subscription in Android requires you to have the information about the subscriptions you created in Brightcove {{ site.product_short }}. Follow these steps to create a subscription.
+      Pour créer un abonnement sous Android, vous devez disposer des informations sur les abonnements que vous avez créés dans Brightcove {{site.product_short}}. Suivez ces étapes pour créer un abonnement.
     </p>
     <ol class="bcls-tasklist">
       <li>
-        Sign in to the
-        <a href="https://play.google.com/apps/publish/">Google Play Console</a> and click on your app.
+        Connectez-vous à la console<a href="https://play.google.com/apps/publish/"> Google Play</a> et cliquez sur votre application.
       </li>
       <li>
-        You need to move into the <strong>Subscriptions</strong> section in the <strong>Google Play Console</strong>. This process is slightly different depending on if you have created subscriptions previously. Choose <em>ONE</em> of the subsections of this step, depending upon previous subscription creation.
-        <h3>No previous subscriptions</h3>
+        Vous devez accéder à la<strong> section</strong> Abonnements de la console<strong> Google Play</strong>. Ce processus est légèrement différent selon que vous avez déjà créé des abonnements. Choisissez<em> UNE</em> des sous-sections de cette étape, en fonction de la création précédente de l'abonnement.
+        <h3>Aucun abonnement précédent</h3>
         <ol>
           <li>
-            From the left navigation select
-            <strong>In-app products > Subscriptions</strong> and you see the following page:
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/intro-no-previous.png" alt="subscriptions index no previous" />
-            </figure>
+            Dans le menu de navigation de gauche, sélectionnez Produits<strong> intégrés à l'application &gt; Abonnements</strong> et la page suivante s'affiche: <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/intro-no-previous.png" alt="index des abonnements aucun précédent" /> </figure>
           </li>
-          <li>Click the <strong>Set up a merchant account</strong> button.</li>
+          <li>Cliquez sur le<strong> bouton</strong> Créer un compte marchand.</li>
           <li>
-            Click the <strong>Set up a merchant account</strong> link.
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/setup-link.png" alt="setup link" />
-            </figure>
+            Cliquez sur le<strong> lien</strong> Créer un compte marchand. <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/setup-link.png" alt="lien de configuration" /> </figure>
           </li>
           <li>
-            After completing the form and clicking <strong>SUBMIT</strong> you will be placed in the subscriptions page where you can add a new subscription.
+            Après avoir rempli le formulaire et cliqué sur<strong> SOUMETTRE,</strong> vous serez redirigé vers la page des abonnements où vous pourrez ajouter un nouvel abonnement.
           </li>
         </ol>
-        <h3>Subscriptions exist</h3>
+        <h3>Des abonnements existent</h3>
         <ol>
           <li>
-            From the left navigation select
-            <strong>In-app products > Subscriptions</strong> and you see the following page:
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscriptions-landing.png" alt="subscriptions landing page" />
-            </figure>
+            Dans le menu de navigation de gauche, sélectionnez Produits<strong> intégrés à l'application &gt; Abonnements</strong> et la page suivante s'affiche: <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscriptions-landing.png" alt="page d'accueil des abonnements" /> </figure>
           </li>
           <li>
-            Note that your previously created subscriptions will be displayed.
+            Notez que les abonnements que vous avez créés précédemment seront affichés.
           </li>
         </ol>
       </li>
       <li>
-        Click the <strong>Create subscription</strong> button.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/click-create.png" alt="click create" />
-        </figure>
+        Cliquez sur le<strong> bouton</strong> Créer un abonnement. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/click-create.png" alt="cliquez sur créer" /> </figure>
       </li>
       <li>
-        In the form, start by entering the <strong>Product ID</strong>. This value MUST match the <strong>Name</strong> provided when creating a subscription in Brightcove {{ site.product_short }}.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-id.png" alt="enter subscriptions id" />
-        </figure>
+        Dans le formulaire, commencez par saisir l'ID<strong> du produit</strong>. Cette valeur DOIT correspondre au<strong> Nom</strong> fourni lors de la création d'un abonnement dans Brightcove {{site.product_short}}. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-id.png" alt="entrez l'identifiant des abonnements" /> </figure>
       </li>
-      <li>Enter the default language.</li>
+      <li>Saisissez la langue par défaut.</li>
       <li>
-        Enter the subscription details. Although not required, it is a best practice to match the <strong>Name</strong> and <strong>Description</strong> to the subscription definition in Brightcove {{ site.product_short }}.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-details.png" alt="enter subscriptions details" />
-        </figure>
+        Saisissez les détails de l'abonnement. Bien que cela ne soit pas obligatoire, il est recommandé de faire correspondre le<strong> Nom</strong> et la<strong> Description</strong> à la définition de l'abonnement dans Brightcove {{site.product_short}}. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-details.png" alt="saisir les détails des abonnements" /> </figure>
       </li>
       <li>
-        Enter the <strong>Billing period</strong> and <strong>Default price</strong>. These values MUST match the subscription created in Brightcove {{ site.product_short }}. If the values don't match, the subscriber will see one price in the Brightcove {{ site.product_short }} app, but be charged a different price in the Google Play Store.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-price.png" alt="enter subscriptions price" />
-        </figure>
+        Saisissez la période<strong> de facturation</strong> et le prix<strong> par défaut</strong>. Ces valeurs DOIVENT correspondre à l'abonnement créé dans Brightcove {{site.product_short}}. Si les valeurs ne correspondent pas, l'abonné verra un prix dans l'application Brightcove {{site.product_short}}, mais un prix différent sera facturé sur le Google Play Store. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-price.png" alt="entrez le prix des abonnements" /> </figure>
       </li>
       <li>
-        Enter the values for the subscription options. Although not required, it is a best practice to match the corresponding values to the subscription definition in Brightcove {{ site.product_short }}.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-options.png" alt="enter subscriptions options" />
-        </figure>
+        Entrez les valeurs des options d'abonnement. Bien que cela ne soit pas obligatoire, il est recommandé de faire correspondre les valeurs correspondantes à la définition de l'abonnement dans Brightcove {{site.product_short}}. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android-subscriptions/subscription-options.png" alt="saisir les options d'abonnement" /> </figure>
       </li>
       <li>
-        Click the <strong>Save</strong> button to create the subscription.
+        Cliquez sur le<strong> bouton</strong> Enregistrer pour créer l'abonnement.
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Creating_a_service_account">Creating a service account</h2>
-    <p>To create a Google Play server account, follow these steps:</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Creating_a_service_account">Création d'un compte de service</h2>
+    <p>Pour créer un compte serveur Google Play, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
       <li>
         <p>
-          Sign in to the
-          <a href="https://play.google.com/apps/publish/">Google Play Console</a>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/play-console.png" alt="Google Play Console" />
-          <figcaption class="bcls-caption--image"> Google Play Console
-          </figcaption>
-        </figure>
+          Connectez-vous à la console<a href="https://play.google.com/apps/publish/"> Google Play</a>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/play-console.png" alt="Console Google Play" /> <figcaption class="bcls-caption--image"> Console Google Play </figcaption> </figure>
       </li>
       <li>
-        <p>In the left navigation, select <strong>Settings</strong>.</p>
+        <p>Dans le menu de navigation de gauche, sélectionnez<strong> Paramètres</strong>.</p>
       </li>
       <li>
         <p>
-          In the left navigation, under <strong>Developer account</strong>, select <strong>API access</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/api-access.png" alt="Create a service account" />
-          <figcaption class="bcls-caption--image"> Create a service account
-          </figcaption>
-        </figure>
+          Dans le menu de navigation de gauche, sous Compte<strong> développeur</strong>, sélectionnez Accès à l'<strong>API</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/api-access.png" alt="Créer un compte de service" /> <figcaption class="bcls-caption--image"> Créer un compte de service </figcaption> </figure>
       </li>
-      <li>Select the <strong>+CREATE SERVICE ACCOUNT</strong> button.</li>
+      <li>Cliquez sur le<strong> bouton</strong> +CRÉER UN COMPTE DE SERVICE.</li>
       <li>
         <p>
-          In the <strong>Create Service Account</strong> dialog, select the <strong>Google API Console</strong> link in step 1.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/account-dialog.png" alt="Account dialog" />
-          <figcaption class="bcls-caption--image">Account dialog</figcaption>
-        </figure>
+          Dans la boîte de<strong> dialogue</strong> Créer un compte de service, sélectionnez le<strong> lien</strong> Google API Console à l'étape 1.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/account-dialog.png" alt="Boîte de dialogue Compte" /> <figcaption class="bcls-caption--image">Boîte de dialogue Compte</figcaption> </figure>
       </li>
       <li>
-        You will be directed to the Google API Console.
+        Vous serez redirigé vers la console Google API.
       </li>
       <li>
         <p>
-          In the left navigation, <strong>Service Accounts</strong> will already be selected. Below the blue header bar, select the <strong>Create Service Account</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/api-console.png" alt="Google API Console" />
-          <figcaption class="bcls-caption--image"> Google API Console
-          </figcaption>
-        </figure>
+          Dans le menu de navigation de gauche, les comptes de<strong> service</strong> seront déjà sélectionnés. Sous la barre d'en-tête bleue, cliquez sur le<strong> bouton</strong> Créer un compte de service.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/api-console.png" alt="Console d'API Google" /> <figcaption class="bcls-caption--image"> Console d'API Google </figcaption> </figure>
       </li>
       <li>
-        Enter a name for the service account. The <strong>Service account ID</strong> will be automatically populated. Add a description. Select the <strong>Create</strong> button.
+        Entrez un nom pour le compte de service. L'ID du compte de<strong> service</strong> sera automatiquement renseigné. Ajoutez une description. Cliquez sur le<strong> bouton</strong> Créer.
       </li>
       <li>
         <p>
-          In the <strong>Service account permissions</strong> screen, expand the <strong>Select a role</strong> dropdown menu and select <strong>Owner</strong>.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/owner-role.png" alt="Owner role" />
-          <figcaption class="bcls-caption--image">Owner role</figcaption>
-        </figure>
+          Dans l'<strong>écran Autorisations du compte de</strong> service, développez le menu<strong> déroulant</strong> Sélectionner un rôle et sélectionnez<strong> Propriétaire</strong>.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/owner-role.png" alt="Rôle du propriétaire" /> <figcaption class="bcls-caption--image">Rôle du propriétaire</figcaption> </figure>
       </li>
-      <li>Select <strong>Continue</strong>.</li>
+      <li>Sélectionnez<strong> Continuer</strong>.</li>
       <li>
         <p>
-          Next, you will create a key that can be used by Brightcove. Select the <strong>+CREATE KEY</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/create-key.png" alt="Create key" />
-          <figcaption class="bcls-caption--image">Create key</figcaption>
-        </figure>
+          Ensuite, vous allez créer une clé qui pourra être utilisée par Brightcove. Sélectionnez le<strong> bouton</strong> +CREATE KEY.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/create-key.png" alt="Créer une clé" /> <figcaption class="bcls-caption--image">Créer une clé</figcaption> </figure>
       </li>
       <li>
         <p>
-          In the side panel, leave the default <strong>Key type</strong> as <strong>JSON</strong>. Select the <strong>CREATE</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/key-format.png" alt="Key format" />
-          <figcaption class="bcls-caption--image">Key format</figcaption>
-        </figure>
+          Dans le panneau latéral, conservez le type<strong> de</strong> clé par défaut sur<strong> JSON</strong>. Cliquez sur le<strong> bouton</strong> CREATE.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/key-format.png" alt="Format des clés" /> <figcaption class="bcls-caption--image">Format des clés</figcaption> </figure>
       </li>
       <li>
         <p>
-          Download the private key file to your computer and select the <strong>CLOSE</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/download-key.png" alt="Download key" />
-          <figcaption class="bcls-caption--image">Download key</figcaption>
-        </figure>
+          Téléchargez le fichier de clé privée sur votre ordinateur et cliquez sur le<strong> bouton</strong> FERMER.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/download-key.png" alt="Clé de téléchargement" /> <figcaption class="bcls-caption--image">Clé de téléchargement</figcaption> </figure>
       </li>
       <li>
-        Send the downloaded private key file to Brightcove.
+        Envoyez le fichier de clé privée téléchargé à Brightcove.
       </li>
-      <li>Select <strong>DONE</strong>.</li>
+      <li>Sélectionnez<strong> TERMINÉ</strong>.</li>
       <li>
         <p>
-          You should see the following screen with your own values. Close this browser tab and return to the Google Play Console.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/service-account-final.png" alt="Service account created" />
-          <figcaption class="bcls-caption--image"> Service account created
-          </figcaption>
-        </figure>
+          Vous devriez voir l'écran suivant avec vos propres valeurs. Fermez cet onglet du navigateur et revenez à la console Google Play.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/service-account-final.png" alt="Compte de service créé" /> <figcaption class="bcls-caption--image"> Compte de service créé </figcaption> </figure>
       </li>
       <li>
         <p>
-          In the Google Play Console, select the
-          <strong>GRANT ACCESS</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/grant-access.png" alt="Grant access" />
-          <figcaption class="bcls-caption--image">Grant access</figcaption>
-        </figure>
+          Dans la console Google Play, cliquez sur le<strong> bouton</strong> ACCORDER L'ACCÈS.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/grant-access.png" alt="Accorder l'accès" /> <figcaption class="bcls-caption--image">Accorder l'accès</figcaption> </figure>
       </li>
       <li>
         <p>
-          In the <strong>Add a new user</strong> dialog, make sure the <strong>FINANCIAL DATA</strong> buttons are checked. Select the <strong>ADD USER</strong> button.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/add-user.png" alt="Add new user" />
-          <figcaption class="bcls-caption--image">Add new user</figcaption>
-        </figure>
+          Dans la boîte de<strong> dialogue</strong> Ajouter un nouvel utilisateur, assurez-vous que les<strong> boutons DONNÉES</strong> FINANCIÈRES sont cochés. Cliquez sur le<strong> bouton</strong> AJOUTER UN UTILISATEUR.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/s-publishing-apps-img/google-play/add-user.png" alt="Ajouter un nouvel utilisateur" /> <figcaption class="bcls-caption--image">Ajouter un nouvel utilisateur</figcaption> </figure>
       </li>
     </ol>
-    <p>You have successfully created a Google Play service account.</p>
-  </section>
-</article>
+    <p>Vous avez créé avec succès un compte de service Google Play.</p>  </section></article>

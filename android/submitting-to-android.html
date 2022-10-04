@@ -1,421 +1,337 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <aside class="bcls-aside bcls-aside--information"> If you are seeking information on how to update an existing app to a Brightcove {{ site.product_short }} app, see the
-      <a href="/publishing-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove {{ site.product_short }} </a>
-      document.
-    </aside>
-    <h2 id="Introduction">Introduction</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section"> <aside class="bcls-aside bcls-aside--information"> Si vous recherchez des informations sur la façon de mettre à jour une application existante vers une application Brightcove {{site.product_short}}, consultez le<a href="/publishing-apps/android/updating-android-apps-to-bcb.html"> document</a> Mise à jour des applications Android vers Brightcove {{site.product_short}}. </aside>
+    <h2 id="Introduction">Présentation</h2>
     <p>
-      This document will assist you in submitting your Brightcove {{ site.product_short }} app to the Google Play Store. The first three sections of this document, not including this one, list information/assets you will need when you begin to complete the submission process.
+      Ce document vous aidera à soumettre votre application Brightcove {{site.product_short}} au Google Play Store. Les trois premières sections de ce document, à l'exclusion de celle-ci, répertorient les informations/ressources dont vous aurez besoin lorsque vous commencerez à terminer le processus de soumission.
     </p>
     <p>
-      Following those lists is step-by-step guidance in the submission process.
-      After you create your account you will proceed to the dashboard where you will supply information for the submission. The dashboard appears as follows:
-    </p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/dashboard-overview.png" alt="Dashboard" />
-    </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Android_Mobile_&_Android_TV">Android Mobile & Android TV</h2>
+      Le suivi de ces listes est un guide étape par étape dans le processus de soumission. Après avoir créé votre compte, vous accéderez au tableau de bord où vous fournirez des informations pour la soumission. Le tableau de bord s'affiche comme suit:
+    </p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/dashboard-overview.png" alt="Tableau de" />   </figure></section><section class="bcls-section">
+    <h2 id="Android_Mobile_&_Android_TV">Android Mobile et Android TV</h2>
     <p>
-      The following information/assets will be required whether you are submitting for Android Mobile or Android TV.
+      Les informations/ressources suivantes seront requises, que vous soumettiez pour Android Mobile ou Android TV.
     </p>
     <ul>
       <li>
-        Store Overview:
-        <a href="https://developer.android.com/distribute"> https://developer.android.com/distribute </a>
+        Aperçu de la boutique:<a href="https://developer.android.com/distribute"> https://developer.android.com/distribute </a>
       </li>
       <li>
-        Developer Program Overview:
-        <a href="https://developers.google.com/"> https://developers.google.com/
-        </a>
+        Présentation du programme pour les développeurs:<a href="https://developers.google.com/"> https://developers.google.com/ </a>
       </li>
       <li>
-        Familiarize yourself with the extensive <strong>To Do</strong> list: <a href="https://developer.android.com/distribute/best-practices/launch/launch-checklist">Launch checklist</a> </li>
+        Familiarisez-vous avec la<strong> liste complète des choses</strong> à faire: <a href="https://developer.android.com/distribute/best-practices/launch/launch-checklist">Checklist de lancement</a> </li>
       <li>
-        Store details:
-        <a href="https://play.google.com/apps/publish/signup/"> https://play.google.com/apps/publish/signup/ </a>
-        (requires Google Play Developer Program - Membership, $25 one time)
+        Détails de la boutique:<a href="https://play.google.com/apps/publish/signup/"> https://play.google.com/apps/publish/signup/</a> (nécessite le programme Google Play Developer - adhésion, 25$ une fois)
       </li>
-      <li>Suggested lead time for approval: One week</li>
-      <li>You need to setup device app logins for QA in store</li>
+      <li>Délai suggéré pour l'approbation: Une semaine</li>
+      <li>Vous devez configurer les connexions aux applications de l'appareil pour l'assurance qualité en magasin</li>
       <li>
-        Be sure your TV app meets Google's
-        <a href="https://developer.android.com/docs/quality-guidelines/tv-app-quality">TV app quality</a> standards.
+        Assurez-vous que votre application TV respecte les<a href="https://developer.android.com/docs/quality-guidelines/tv-app-quality"> normes de qualité des applications</a> TV de Google.
       </li>
       <li>
-        A signing key must be created which will be used to sign the app. The following information is required to create the signing key: <ul>
+        Vous devez créer une clé de signature qui sera utilisée pour signer l'application. Les informations suivantes sont requises pour créer la clé de signature: <ul>
           <li>Password</li>
-          <li>First and Last name</li>
-          <li>Name of Organizational unit</li>
-          <li>Name of Organization</li>
-          <li>Name of City / Locality</li>
-          <li>Name of State / Province</li>
-          <li>Two-letter country code for this unit</li>
+          <li>Nom et prénom</li>
+          <li>Nom de l'unité organisationnelle</li>
+          <li>Nom de l'organisation</li>
+          <li>Nom de la ville/localité</li>
+          <li>Nom de l'État/de la Province</li>
+          <li>Code pays à deux lettres pour cet appareil</li>
         </ul>
-        NOTE: The signing key for mobile and TV apps MUST be the same if they are sharing a store listing using multiple APKs.
+        REMARQUE: La clé de signature pour les applications mobiles et TV DOIT être la même si elles partagent une fiche de boutique à l'aide de plusieurs fichiers APK.
       </li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Required_information_for_Android_Mobile"> Required information for Android Mobile </h2>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Required_information_for_Android_Mobile"> Informations requises pour Android Mobile </h2>
     <p>
-      These are specific requirements for Android Mobile on top of the joint requirements listed above.
+      Il s'agit d'exigences spécifiques pour Android Mobile qui viennent s'ajouter aux exigences communes énumérées ci-dessus.
     </p>
     <ul>
-      <li>App Title - 50 characters</li>
-      <li>Short Description - 80 characters</li>
-      <li>Full description - 4000 characters</li>
+      <li>Titre de l'application - 50 caractères</li>
+      <li>Brève description - 80 caractères</li>
+      <li>Description complète - 4000 caractères</li>
       <li>
-        Note : All of this metadata should be translated to all languages if available.
+        Remarque: Toutes ces métadonnées doivent être traduites dans toutes les langues si elles sont disponibles.
       </li>
-      <li>App ID - example - com.myco.tvcable</li>
-      <li>Keystore to sign the package</li>
-      <li>Application type</li>
-      <li>Category</li>
+      <li>ID d'application - exemple - com.myco.tvcable</li>
+      <li>Keystore pour signer le package</li>
+      <li>Type d'application</li>
+      <li>Catégorie</li>
       <li>
-        Screenshots (see Google's
-        <a href="https://support.google.com/googleplay/android-developer/answer/1078870">Graphic assets, screenshots, & video</a> document for more info)
+        Captures d'écran (voir Ressources<a href="https://support.google.com/googleplay/android-developer/answer/1078870"> graphiques, captures d'écran et</a> document vidéo de Google pour plus d'informations)
         <ul>
-          <li>Standard - English (UK) - en-GB</li>
+          <li>Standard - Anglais (UK) - fr-FR</li>
           <li>
-            JPEG or 24-bit PNG (no alpha). Minimum page length: 320px. Maximum page length: 3840px.
+            JPEG ou PNG 24 bits (pas de format alpha). Longueur de page minimale: 320 px. Longueur de page maximale: 3840 px.
           </li>
           <li>
-            You must upload at least one 7-inch screenshot and one 10-inch screenshot to allow your app to appear in the <strong>Developed to tablets</strong> list in the Play Store. If you have previously uploaded screenshots, move them to the appropriate area below.
+            Vous devez télécharger au moins une capture d'écran de 7 pouces et une capture d'écran de 10 pouces pour permettre à votre application d'apparaître dans la<strong> liste</strong> Développé pour tablettes du Play Store. Si vous avez déjà téléchargé des captures d'écran, déplacez-les dans la zone appropriée ci-dessous.
           </li>
         </ul>
       </li>
       <li>
-        High resolution icon
+        Icône haute résolution
         <ul>
-          <li>Standard - English (UK) - en-GB</li>
+          <li>Standard - Anglais (UK) - fr-FR</li>
           <li>512 x 512</li>
-          <li>32-bit PNG (with alpha)</li>
+          <li>PNG 32 bits (avec alpha)</li>
         </ul>
       </li>
       <li>
-        Feature Graphic
+        Graphique de fonctionnalité
         <ul>
-          <li>Standard - English (UK) - en-GB</li>
-          <li>1024b x 500h</li>
-          <li>JPG or 24-bit PNG (no alpha)</li>
+          <li>Standard - Anglais (UK) - fr-FR</li>
+          <li>1 024 Go x 500 h</li>
+          <li>JPG ou PNG 24 bits (pas de format alpha)</li>
         </ul>
       </li>
       <li>
-        Logo Icon
+        Icône Logo
         <ul>
-          <li>192 x192 app icon (one square and one round)</li>
-          <li>Client to set up App logins for QA in store</li>
+          <li>Icône d'application 192 x 192 (un carré et un rond)</li>
+          <li>Le client doit configurer les identifiants de connexion aux applications pour l'assurance qualité en magasin</li>
         </ul>
       </li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Required_information_for_Android_TV"> Required information for Android TV
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Required_information_for_Android_TV"> Informations requises pour Android TV
     </h2>
     <p>
-      These are specific requirements for Android TV on top of the joint requirements listed above.
+      Il s'agit d'exigences spécifiques pour Android TV qui viennent s'ajouter aux exigences communes énumérées ci-dessus.
     </p>
     <ul>
-      <li>APK package created with a generated signature</li>
-      <li>Title</li>
-      <li>Short Description</li>
-      <li>Full Description</li>
+      <li>package APK créé avec une signature générée</li>
+      <li>Titre</li>
+      <li>Brève description</li>
+      <li>Description complète</li>
       <li>
-        Screenshots
+        Captures d'écran
         <ul>
-          <li>JPEG or 24-bit PNG (no alpha). Up to 8 can be uploaded</li>
-          <li>1280x720</li>
+          <li>JPEG ou PNG 24 bits (pas de format alpha). Jusqu'à 8 peuvent être téléchargés</li>
+          <li>1 280 x 720</li>
         </ul>
       </li>
       <li>
-        Hi-res icon
+        Icône Hi-res
         <ul>
           <li>512 x 512</li>
-          <li>32-bit PNG (with alpha)</li>
+          <li>PNG 32 bits (avec alpha)</li>
         </ul>
       </li>
       <li>
         Banner
         <ul>
           <li>320 x 180</li>
-          <li>24-bit PNG</li>
+          <li>PNG 24 bits</li>
         </ul>
       </li>
       <li>
-        IC_launcher
+        IC_Launcher
         <ul>
-          <li>256 x256</li>
-          <li>24-bit PNG</li>
+          <li>256 x 256</li>
+          <li>PNG 24 bits</li>
         </ul>
       </li>
       <li>
-        Feature Graphic
+        Graphique de fonctionnalité
         <ul>
-          <li>1024w x 500h</li>
-          <li>JPG or 24-bit PNG (no alpha)</li>
+          <li>1 024 W x 500 H</li>
+          <li>JPG ou PNG 24 bits (pas de format alpha)</li>
         </ul>
       </li>
-      <li>Client to set up App logins for QA in store</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Get_started_in_the_dashboard"> Get started in the dashboard
+      <li>Le client doit configurer les identifiants de connexion aux applications pour l'assurance qualité en magasin</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Get_started_in_the_dashboard"> Lancez-vous dans le tableau de bord
     </h2>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>Browse to the
-          <a href="https://play.google.com/apps/publish/signup/">Google Play Console sign up page</a> and create your account. This will include paying a $25 fee. After completing the sign up process you will see the <strong>Google Play Console</strong>:
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/welcome.png" alt="create application" />
-        </figure>
+        <p>Accédez à la page d'inscription de la console<a href="https://play.google.com/apps/publish/signup/"> Google Play</a> et créez votre compte. Cela inclura le paiement de frais de 25$. Une fois le processus d'inscription terminé, vous verrez la console<strong> Google Play</strong>:
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/welcome.png" alt="créer une application" /> </figure>
       </li>
-      <li>Click the <strong>Create app</strong> button.</li>
+      <li>Cliquez sur le<strong> bouton</strong> Create app.</li>
       <li>
-        <p>Provide the <strong>App name</strong> and select a <strong>Default language</strong>.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/name-language.png" alt="name and language page" />
-        </figure>
+        <p>Indiquez le nom de<strong> l'application</strong> et sélectionnez une langue<strong> par défaut</strong>.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/name-language.png" alt="page de nom et de langue" /> </figure>
       </li>
       <li>
-        <p>Select whether the app will be <strong>Free</strong> or <strong>Paid</strong>. You can edit this option until you publish the app.</p>
-        <p>Note that this is free to install the app or not. If you are going to gain revenue by advertisements or subscriptions, and not a per install fee, click <strong>Free</strong>.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/free-paid.png" alt="free or paid option" />
-        </figure>
+        <p>Choisissez si l'application sera<strong> gratuite</strong> ou<strong> payante</strong>. Vous pouvez modifier cette option jusqu'à ce que vous publiiez l'application.</p>
+        <p>Notez que l'installation de l'application est gratuite ou non. Si vous comptez générer des revenus grâce aux publicités ou aux abonnements, et non à des frais d'installation, cliquez sur<strong> Gratuit</strong>.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/free-paid.png" alt="option gratuite ou payante" /> </figure>
       </li>
-      <li>Check the <strong>Declarations</strong> associated with developer policies, terms of service, and export laws.</li>
+      <li>Consultez les<strong> déclarations</strong> associées aux politiques des développeurs, aux conditions d'utilisation et aux lois d'exportation.</li>
       <li>
-        Click the <strong>Create app</strong> button. You will be moved into the <strong>Dashboard</strong> section.
+        Cliquez sur le<strong> bouton</strong> Create app. Vous serez déplacé dans la<strong> section</strong> Tableau de bord.
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Set_up_your_app"> Set up your app
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Set_up_your_app"> Configurez votre application
     </h2>
     <ol class="bcls-tasklist">
       <li>
-        <p>In the <strong>Dashboard</strong>, scroll down to the <strong>Set up your app</strong> section and expand <strong>View tasks</strong>.</p>
-        <p>Work through the list of tasks.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/setup-tasks.png" alt="setup tasks" />
-        </figure>
+        <p>Dans le<strong> Tableau de bord</strong>, faites défiler vers le bas jusqu'à la<strong> section</strong> Configurer votre application et développez<strong> Afficher les tâches</strong>.</p>
+        <p>Parcourez la liste des tâches.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/setup-tasks.png" alt="tâches de configuration" /> </figure>
       </li>
     </ol>
-    <h3>App Access</h3>
+    <h3>Accès à l'application</h3>
     <ol class="bcls-tasklist">
       <li>
-        Move into the <strong>App Access</strong> section and provide information about:
+        Accédez à la<strong> section</strong> App Access et fournissez des informations sur:
         <ul>
-          <li>If there are restricted parts of your app</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-access.png" alt="App Access" />
-        </figure>
+          <li>Si certaines parties de votre application sont soumises à des restrictions</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-access.png" alt="Accès à l'application" /> </figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>Ads</h3>
+    <h3>Publicités</h3>
     <ol class="bcls-tasklist">
       <li>
-        Move into the <strong>Ads</strong> section and provide information about:
+        Accédez à la<strong> section</strong> Annonces et fournissez des informations sur:
         <ul>
-          <li>If advertisements will be used in your content</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/ads-included.png" alt="Ads included" />
-        </figure>
+          <li>Si des publicités seront utilisées dans votre contenu</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/ads-included.png" alt="Annonces incluses" /> </figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>Content ratings</h3>
+    <h3>Notations de contenu</h3>
     <ol class="bcls-tasklist">
       <li>
-        <p>Move into the <strong>Content ratings</strong> section. In this section you complete a questionnaire, and based on your responses a rating will be assigned to your app and its content. For complete information see the
-          <a href="https://support.google.com/googleplay/android-developer/answer/188189">Content ratings for apps & games</a> document.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/content-ratings.png" alt="Content ratings" />
-        </figure>
+        <p>Passez à la<strong> section Évaluation</strong> du contenu. Dans cette section, vous remplissez un questionnaire et, en fonction de vos réponses, une évaluation sera attribuée à votre application et à son contenu. Pour plus d'informations, consultez le<a href="https://support.google.com/googleplay/android-developer/answer/188189"> document</a> Content ratings for apps &amp; games.
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/content-ratings.png" alt="Notations de contenu" /> </figure>
       </li>
-      <li>Work through the sections, clicking <strong>Next</strong> to advance.</li>
-      <li>Review the information that you entered on the <strong>Summary</strong> page and click <strong>Submit</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Parcourez les sections en cliquant sur<strong> Suivant</strong> pour avancer.</li>
+      <li>Vérifiez les informations que vous avez saisies sur la<strong> page</strong> Résumé et cliquez sur<strong> Soumettre</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>Target audience</h3>
+    <h3>Public cible</h3>
     <ol class="bcls-tasklist">
       <li>
-        Move into the <strong>Target audience</strong> section and provide information about:
+        Accédez à la<strong> section Public</strong> cible et fournissez des informations sur:
         <ul>
-          <li>The target audience of your app</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/target-audience.png" alt="Target audience" />
-        </figure>
+          <li>Le public cible de votre application</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/target-audience.png" alt="Public cible" /> </figure>
       </li>
-      <li>Work through the sections, clicking <strong>Next</strong> to advance.</li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Parcourez les sections en cliquant sur<strong> Suivant</strong> pour avancer.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>News apps</h3>
+    <h3>Applis d'actualités</h3>
     <ol class="bcls-tasklist">
       <li>
-        Move into the <strong>News apps</strong> section and provide information about:
+        Accédez à la<strong> section Applications d'</strong>actualités et fournissez des informations sur:
         <ul>
-          <li>Whether your app is a news app</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/news-app.png" alt="News apps" />
-        </figure>
+          <li>Si votre application est une application d'actualités</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/news-app.png" alt="Applis d'actualités" /> </figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>COVID-19 apps</h3>
+    <h3>Applis COVID-19</h3>
     <ol class="bcls-tasklist">
       <li>
-        Move into the <strong>COVID-19 apps</strong> section and provide information about:
+        Accédez à la<strong> section des applications</strong> COVID-19 et fournissez des informations sur:
         <ul>
-          <li>Whether your app is used for COVID-19 contact tracing and status</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/covid19-app.png" alt="COVID-19 apps" />
-        </figure>
+          <li>Si votre application est utilisée pour la recherche et le statut des contacts liés à la COVID-19</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/covid19-app.png" alt="Applis COVID-19" /> </figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Configure_store_settings"> Configure store settings
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Configure_store_settings"> Configuration des paramètres du magasin
     </h2>
     <ol class="bcls-tasklist-restart">
-      <li>From the Dashboard, select click <strong>Select an app category and provide contact details</strong>.
+      <li>Dans le tableau de bord, cliquez sur<strong> Sélectionner une catégorie d'applications et saisissez les coordonnées</strong>.
       </li>
       <li>
-        Here, you'll provide information about:
+        Vous fournirez ici des informations sur:
         <ul>
-          <li>Your app type and category</li>
-          <li>Whether your app uses tags</li>
-          <li>Store listing contact details</li>
-          <li>External marketing</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/store-settings.png" alt="Store settings" />
-        </figure>
+          <li>Le type et la catégorie de votre application</li>
+          <li>Si votre application utilise des balises</li>
+          <li>Coordonnées de la liste de la boutique</li>
+          <li>Marketing externe</li>
+        </ul> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/store-settings.png" alt="Paramètres de la boutique" /> </figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
     </ol>
-    <h3>Main store listing</h3>
+    <h3>Liste du magasin principal</h3>
     <ol class="bcls-tasklist-restart">
-      <li>From the Dashboard, select click <strong>Set up your store listing</strong>.
+      <li>Dans le tableau de bord, cliquez sur<strong> Configurer la liste de votre boutique</strong>.
       </li>
       <li>
-        <p>In the <strong>App details</strong> section, enter the <strong>Short description</strong> and <strong>Full description</strong>.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-details.png" alt="App details" />
-        </figure>
+        <p>Dans la<strong> section Détails de</strong> l'application, saisissez la<strong> brève description</strong> et la description<strong> complète</strong>.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-details.png" alt="Détails de l'application" /> </figure>
       </li>
       <li>
-        <p>In the <strong>Graphics</strong> section, supply the graphic assets as requested in the form.</p>
-        <aside class="bcls-aside bcls-aside--information"> You do NOT need to enter images for <em>WEAR OS</em>.</aside>
+        <p>Dans la<strong> section</strong> Graphiques, fournissez les ressources graphiques comme demandé dans le formulaire.</p> <aside class="bcls-aside bcls-aside--information"> Il n'est PAS nécessaire de saisir des images pour<em> WEAR OS</em>.</aside>
         <!-- <aside class="bcls-aside bcls-aside--tip"> The <em>TV Banner</em> and
           <em>Daydream 360 degree stereoscopic image</em> and not important for Brightcove {{ site.product_short }}. The YouTube promo video is needed only if you will use YouTube to promote your app.
-        </aside> -->
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/graphics.png" alt="Graphics section" />
-        </figure>
+        </aside> --> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/graphics.png" alt="Section graphique" /> </figure>
       </li>
 
-      <li>Click <strong>Save</strong>.</li>
-      <li>Navigate back to the dashboard.</li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Test_your_app"> Test your App
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+      <li>Revenez au tableau de bord.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Test_your_app"> Testez votre application
     </h2>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>From the Dashboard, scroll down to the <strong>Release your app</strong> section and expand the tasks.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/release-your-app.png" alt="Release your app" />
-        </figure>
+        <p>Dans le Tableau de bord, faites défiler vers le bas jusqu'à la<strong> section</strong> Libérez votre application et développez les tâches.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/release-your-app.png" alt="Libérez votre application" /> </figure>
       </li>
     </ol>
-    <h3>Set up your closed test track</h3>
-    <p>Here, you will create a <strong>Closed track</strong> to allow testing of your app before it goes live. The closed track lets you choose a number of people to test your app.</p>
+    <h3>Configurez votre piste d'essai fermée</h3>
+    <p>Ici, vous allez créer une piste<strong> fermée</strong> pour permettre de tester votre application avant sa mise en ligne. La piste fermée vous permet de choisir un certain nombre de personnes pour tester votre application.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click <strong>Select countries and regions</strong>.
+      <li>Cliquez sur<strong> Sélectionner les pays et les régions</strong>.
       </li>
       <li>
-        <p>Add countries or regions to this track to select country availability that's different from your production track.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/countries-regions.png" alt="Countries and regions" />
-        </figure>
+        <p>Ajoutez des pays ou des régions à cette piste pour sélectionner la disponibilité des pays qui est différente de celle de votre chaîne de production.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/countries-regions.png" alt="Pays et régions" /> </figure>
       </li>
       <li>
-        <p>Select the <strong>Testers</strong> tab.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/testers-tab.png" alt="Testers tab" />
-        </figure>
+        <p>Sélectionnez l'<strong>onglet</strong> Testeurs.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/testers-tab.png" alt="Onglet Testeurs" /> </figure>
       </li>
       <li>
-        <p>Choose who can access your test. You can create an email list of use a Google Group.</p>
+        <p>Choisissez qui peut accéder à votre test. Vous pouvez créer une liste de diffusion pour utiliser un groupe Google.</p>
       </li>
-      <li>Click <strong>Save changes</strong>.</li>
+      <li>Cliquez sur<strong> Enregistrer les modifications</strong>.</li>
     </ol>
-    <h3>Create a new release</h3>
-    <p>Create and rollout a new release within the closed testing track.</p>
+    <h3>Créer une nouvelle version</h3>
+    <p>Créez et déployez une nouvelle version dans le cadre de la piste de test fermée.</p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>Upload the Android App Bundle (AAB format) This is provided to you by Brightcove.</p>
-      </li>
-      <aside class="bcls-aside bcls-aside--information">As of August 2021, the Android Store now requires you to upload an Android App Bundle (AAB format) instead of the APK.</aside>
-      <figure class="bcls-figure">
-        <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-bundle.png" alt="App bundle" />
-      </figure>
+        <p>Téléchargez l'offre groupée d'applications Android (format AAB) Ceci vous est fourni par Brightcove.</p>
+      </li> <aside class="bcls-aside bcls-aside--information">Depuis août 2021, l'Android Store vous demande désormais de télécharger un ensemble d'applications Android (format AAB) au lieu de l'APK.</aside> <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/app-bundle.png" alt="Pack d'applications" /> </figure>
       </li>
       <li>
-        <p>Provide a release name (for example <em>2.1</em>), along with release notes, in as many languages that you are supporting.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/release-details.png" alt="Release details" />
-        </figure>
+        <p>Fournissez un nom de version (par exemple<em> 2.1</em>), ainsi que des notes de version, dans autant de langues que vous prenez en charge.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/release-details.png" alt="Détails de la version" /> </figure>
       </li>
-      <li>Save or review the supplied information</li>
-    </ol>
-
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Manage_releases"> Manage releases
+      <li>Enregistrer ou vérifier les informations fournies</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Manage_releases"> Gérer les versions
     </h2>
     <ol class="bcls-tasklist-restart">
-      <li>In the left navigation, select <strong>Production</strong>.</li>
+      <li>Dans le menu de navigation de gauche, sélectionnez<strong> Production</strong>.</li>
       <li>
-        <p>Select <strong>Countries / regions</strong>. Add the Countries /regions where you want to make your app available.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/country-region.png" alt="Set countries/regions" />
-        </figure>
+        <p>Sélectionnez<strong> Pays/régions</strong>. Ajoutez les pays/régions dans lesquels vous souhaitez rendre votre application disponible.</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-publishing-apps-img/android/country-region.png" alt="Définir les pays/régions" /> </figure>
       </li>
-      <li>Click <strong>Add countries / regions</strong>.</li>
-      <li>When you are ready, click <strong>Create new release</strong>. </li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Adding_subscriptions">Adding subscriptions</h2>
+      <li>Cliquez sur<strong> Ajouter des pays/régions</strong>.</li>
+      <li>Lorsque vous êtes prêt, cliquez sur<strong> Créer une nouvelle version</strong>. </li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Adding_subscriptions">Ajout d'abonnements</h2>
     <p>
-      If you are adding subscriptions to your Android app, please see the <a href="/publishing-apps/android/adding-subscriptions-in-android.html">Adding Subscriptions to Android</a> document for complete instructions.
-    </p>
-  </section>
-</article>
+      Si vous ajoutez des abonnements à votre application Android, veuillez consulter le<a href="/publishing-apps/android/adding-subscriptions-in-android.html"> document</a> Ajout d'abonnements à Android pour obtenir des instructions complètes.
+    </p>  </section></article>
